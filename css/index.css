@@ -3,70 +3,88 @@
   padding: 0;
   list-style: none;
 }
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
 .main {
-  width: 750px;
-  height: 100%;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  border: 1px solid black;
 }
-.main .nav {
-  width: 100%;
-  height: 50px;
-  border: 1px solid black;
-  display: flex;
-}
-.main .nav .left {
-  width: 250px;
-  height: 50px;
-  border: 1px solid red;
-}
-.main .nav .middle {
-  width: 250px;
-  height: 50px;
-  border: 1px solid black;
-}
-.main .nav .right {
-  width: 250px;
-  height: 50px;
-  border: 1px solid black;
-}
-.main .content {
-  border: 1px solid green;
+.main .BG {
   width: 100%;
   height: 500px;
+  font-size: 24px;
+  margin: 0 auto;
 }
-.main .content .flexbox {
-  width: 100%;
+.main .BG .typeArea {
+  background-color: rgba(245, 245, 245, 0.8);
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 900px;
   height: 500px;
-  background-color: grey;
+  position: relative;
 }
-.main .content .flexbox ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.main .BG .typeArea .nav {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
 }
-.main .content .flexbox ul li {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 1px solid gold;
+.main .BG .typeArea .nav .left {
+  width: 30%;
+  height: 50px;
+  line-height: 45px;
+  color: white;
+  font-size: 24px;
   text-align: center;
-  transition: all 1s ;
 }
-.main .content .flexbox ul li:hover {
-  transform: rotateY(360deg);
+.main .BG .typeArea .nav .right {
+  width: 70%;
+  line-height: 45px;
+  color: white;
+  font-size: 12px;
 }
-.main .content .flexbox ul li:nth-child(1) {
+.main .BG .typeArea .nav .right ul {
   display: flex;
-  background: url(../image/u=841136179\,3519316105&fm=26&fmt=auto&gp=0.webp) no-repeat 0 0;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+}
+.main .BG .typeArea .nav .right ul li {
+  height: 50px;
+  line-height: 45px;
+}
+.main .BG .typeArea .nav .right ul li:hover {
+  border-bottom: 1px solid white;
+}
+.main .BG .typeArea .nav .introduce {
+  width: 90%;
+  height: 400px;
+  margin: 50px auto;
+}
+.main .BG .typeArea .nav .introduce .headpic {
+  border-radius: 100%;
+  width: 250px;
+  height: 300px;
+  margin: 20px -10px;
+  background: url(../image/wujin.jpg) no-repeat;
   background-size: 100% 100%;
 }
-.main .content .flexbox ul li:nth-child(2) {
+.main .BG .typeArea .nav .introduce .text {
+  width: 65%;
+  height: 100%;
+  margin: 20px 0px ;
+}
+.main .BG .typeArea .nav .introduce .text ul {
+  width: 100%;
+  height: 100%;
   display: flex;
-  background: url(../image/src=http___image.yjcf360.com_u_cms_www_202010_28134727nuvk.png&refer=http___image.yjcf360.jpg) no-repeat 0 0;
-  justify-content: center;
-  align-items: center;
-  background-size: 100% 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .BG .typeArea .nav .introduce .text ul li {
+  width: 50%;
+  height: 20%;
 }

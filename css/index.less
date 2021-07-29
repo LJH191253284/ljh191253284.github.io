@@ -3,79 +3,100 @@
     padding: 0;
     list-style: none;
 }
-
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
 .main{
-    width: 750px;
-    height: 100%;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
-    border: 1px solid black;
-    .nav{
-        width: 100%;
-        height: 50px;
-        border: 1px solid black;
-        display: flex;
-        
-        .left{
-            width: 250px;
-            height: 50px;
-            border: 1px solid red;
-        }
-        .middle{
-            width: 250px;
-            height: 50px;
-            border: 1px solid black;
-        }
-        .right{
-            width: 250px;
-            height: 50px;
-            border: 1px solid black;
-        }
-    }
-
-    .content{
-        border: 1px solid green;
+   
+    .BG{
         width: 100%;
         height: 500px;
+        font-size: 24px;
+        margin: 0 auto;
        
-        .flexbox{
-            width: 100%;
+        .typeArea{
+            background-color: rgba(245,245, 245,0.8);
+            border: 1px solid black;
+            margin: 0 auto;
+            width: 900px;
             height: 500px;
-            background-color: grey;  
-            
-            ul{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            
-                li{
-                    width: 200px;
-                    height: 200px;
-                    border-radius: 50%;
-                    border: 1px solid gold;
-                    text-align: center;
-                    transition: all 1s ;
-                    &:hover{
-                        transform:rotateY(360deg);
-                    }
-                   &:nth-child(1){
+            position: relative;
+            .nav{
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            box-sizing: border-box;
+            .left{
+                width: 30%;
+                height: 50px;
+                line-height: 45px;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+            }
+            .right{
+                width: 70%;
+                line-height: 45px;
+                color: white;
+                font-size: 12px;
+                ul{
                     display: flex;
-                    background:url(../image/u=841136179\,3519316105&fm=26&fmt=auto&gp=0.webp)no-repeat 0 0;
-                    justify-content: center;
-                    align-items: center;
+                    justify-content: space-evenly;
+                    li{
+                        height: 50px;
+                        line-height: 45px;
+                        &:hover{
+                            border-bottom: 1px solid white;
+                        }
+                    }
+                }
+            }//right end
+            .introduce{
+                width: 90%;
+                height: 400px;
+                margin:50px auto;
+                
+                .headpic{
+                   
+                    border-radius: 100%;
+                    width: 250px;
+                    height: 300px;
+                    margin: 20px -10px;
+                    background: url(../image/wujin.jpg)no-repeat ;
                     background-size: 100% 100%;
-
+                   
+                }
+                .text{
                     
-                   }
-                   &:nth-child(2){
-                    display: flex;
-                    background:url(../image/src=http___image.yjcf360.com_u_cms_www_202010_28134727nuvk.png&refer=http___image.yjcf360.jpg)no-repeat 0 0;
-                    justify-content: center;
-                    align-items: center;
-                    background-size: 100% 100%;   
+                    width: 65%;
+                    height: 100%;
+                    margin: 20px 0px ;
+                    ul{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        li{
+                            width: 50%;
+                            height: 20%;
+                        }
                     }
-
                 }
             }
+
+
+
+            
+
+        }   
         }
+        
     }
 }
