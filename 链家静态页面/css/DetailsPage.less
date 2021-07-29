@@ -1,0 +1,1115 @@
+  //nav 开始
+ 
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.page{
+    width: 375px;
+    height: auto;
+    margin: 0 auto;
+   //nav 开始
+   .nav{
+  
+    display: flex;
+    width: 375px;
+    height: 50px;
+    padding: 0 20px 0;
+    background-color: white;
+   
+    .left{
+    width: 33.333%;
+    height: 49px;
+    display: flex;
+    
+        a{
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+        .l_icon{
+        
+            width: 20px;
+            height: 20px;
+            line-height: 10px;
+            padding: 0 4px;
+            background: url("../image/个人中心雪碧图.png")no-repeat 0 0;
+            background-size: 93px 173px;
+            background-position: 0px -20px;
+            margin-top: 12px;
+            
+        }  
+        }
+        
+        .city_warp{
+            height: 49px;
+            line-height: 49px;
+            margin-left: 20px;
+           
+            i{  
+               
+                font-size: 1px;
+                color: #9c9afa;
+            }
+        }
+    }//
+
+    .middle{
+        width: 33.333%;
+        height: 48px;
+        div{
+            
+            margin: 0 auto;
+            width: 62px;
+            height: 48px;
+            background: url("../image/链家logo.jpeg")no-repeat 0 0;
+            background-size: 120% 120%;
+            background-position: -5px -5px;
+        }
+        
+    
+    }
+    .right{
+    
+        width: 33.333%;
+        height: 49px;
+        line-height: 49px;
+        .r_icon{
+            width: 29px;
+            height: 29px;
+            background: url("../image/个人中心雪碧图.png")no-repeat 0 0;
+            background-size: 131px 236px;
+            background-position: 5px 6px;
+            float: right;
+            margin-top: 6px;
+           
+        }
+    
+
+    }
+
+    }//nav end
+
+ //图片层开始
+  .mengban{
+   
+      width: 375px;
+      height: 227px;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+    
+      ul{
+          width: 900%;  
+          height: 100%;
+          clear: both;
+          li{
+            width: 375px;
+            height: 227px;
+            float: left;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+          }
+      }
+      //右下角 页数
+      .opt_bar{
+        position: absolute;
+        right: 1.125rem;
+        bottom: 50px;
+        text-align: justify;
+        height: 1.25rem;
+        line-height: 1.25rem;
+        padding: 0 .5625rem;
+        background-color: rgba(0,0,0,.5);
+        border-radius: 1.25rem;
+        font-size: .8125rem;
+        z-index: 10;
+      
+          .count{
+            color: white;
+          }
+      }// 右 end
+
+      //必看好房
+      .haofang_banner{
+          width: 375px;
+          height: 40px;
+          background-color:#D53C3C;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 24px 0 0;
+          position: absolute;
+          bottom: 0;
+          border-top-left-radius: 2rem;
+          border-top-right-radius: 2rem;
+          img{
+            width: 115px;
+            height: 40px;
+
+          }
+          .tags{
+            width: 192px;
+            height: 15px;  line-height: 40px;
+            display: flex;
+            justify-content: space-between;
+            .tag-item{
+                width: 65px;
+                height: 15px;
+              
+                .tag_icon{
+                    width: 11px;
+                    height: 7.5px;
+                }
+                span{
+                  
+                       color: white;
+                       font-size: 11px;
+                    }
+
+            }
+          }
+
+      }//必看好房 end
+      
+  }
+ //图片层结束
+
+    //标题 
+       .house_title{
+        background-color: white;
+        width: 335px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        .detail_title{
+           
+            width: 298px;
+            height: 64px;   
+            font-weight: 700;
+        }
+        .follow{
+           position: absolute;
+           width: 40px;
+           height: 35px;
+           right: 0;
+           top: 0px;
+
+           .head-icon{  
+            width: 28px;
+            height: 26px;
+            background: url('../image/详情页-image/详情精灵.jpg') no-repeat ;
+            background-position:0px  -395px;
+            background-size: 100% 1800%;
+            background-color: transparent;
+          
+           }
+           span{
+            color: #101d37;
+            font-size: .6875rem;
+            position: absolute;
+            top: 3.6rem;
+            right: .6rem;
+            display: block;
+            text-align: center;
+            width: 100%;
+           }
+
+        }
+
+        .tit{
+            border-bottom: 1px solid beige;
+            width: 335px;
+            height:33.5px;
+            margin: 0 auto;
+           
+            .agent{ 
+                line-height: 33.5px;
+                float: left;
+                padding: 0 7px;
+                .icon{
+                    margin-top: 7px;
+                    width: 20px;
+                    height: 15px;
+                   
+                    background: url("../image/详情页-image/详情-house_organization.png")no-repeat 0 0;
+                    background-size: 100% 100%;
+                    float: left;
+                }
+                span{
+                    color: #101d37;
+                    line-height: 33.5px;
+                    float: left;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    //标题 end
+
+    //房子基本信息
+    .similar_data{
+        background-color: white;
+        border-bottom: 1px solid beige;
+        width: 100%;
+        height: 83.5px;
+        padding: 20px 0;
+        .price_box{
+         
+            width: 100%;
+            height: 43.6px;
+            .similar_data_detail{
+                border-right: 1px  solid beige;
+                width: 120px;
+                height: 39px;
+                padding-left: 20px;
+                float: left;
+                .red{
+                    color: #fa5741;
+                    .price{
+
+                    }
+                    .unit{
+
+                    }
+                }
+                .gray{
+                    font-size: .8125rem;
+                    font-weight: lighter;
+                    color: #9c9fa1;
+                }
+            }
+        }
+    }
+    //房子基本信息 end
+    
+    //打开APP
+    .pictext{
+        background-color: white;
+        border-bottom: 1px solid beige;
+        width: 335px;
+        height: 54.5px;
+        margin: 0 20px;
+        padding: 12px 0;
+        position: relative;
+        .download_logo{
+            float: left;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+           
+        }
+        .download_desc{
+            width: 238px;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 10px; 
+            float: left;
+        }
+       span{
+           position: absolute;
+           right: 0;
+           top: 22px;
+           font-size: 12px;
+           color: #9c9fa1;
+          
+       }
+    }
+    //打开APP end
+
+
+    //房子详情信息
+    .house_description{
+        background-color: white;
+      
+        margin: 0 auto;
+        width: 335px;
+        height: 341px;
+        clear: both;
+        .tag_group{
+          
+            width: 100%;
+            height: 54px;
+            line-height: 54px;
+            span{
+                display: inline-block;
+                height: 1.0625rem;
+                font-size: .6875rem;
+                line-height: 1.0625rem;
+                background-color: #e3f4f3;
+                color: #1ba39c;
+                padding: 0 .1875rem;
+                border-radius: .125rem;
+            }
+        }
+        li{
+           
+            width: 157px;
+            height: 25px;line-height: 25px;
+            float: left;
+            margin: 0 0 8px;
+            font-size: 16px;
+            span{
+                font-size: 16px;
+                color: #9c9fa1;
+            }
+            
+        }
+        .long{
+            width: 100%;
+            color: #5680a6;
+            position: relative;
+            .glyphicon{
+                position: absolute;
+                right: 0;
+                font-size: 12px;
+            }
+        }
+    }
+    //房子详情信息 end
+
+    //好房亮点
+    .haofang-wrap{
+        
+        border-top: 10px solid rgb(246, 246, 246);
+        border-bottom: 10px solid rgb(246, 246, 246);
+        width: 100%;
+        height: 220px;
+      
+        .good_house{
+            
+            padding: 10px 24px 18px 28px;
+            a{  color: black;
+                img{
+                    width: 22.4px;
+                    height: 22.4px;
+                    float: left; 
+                    margin-top: 22.4px;
+                }
+                    h3{
+                        width: 335px;
+                        height: 20px;
+                        font-weight: 700;
+                        margin-left: 27px;
+                     }
+                    span{
+
+                    }
+                
+               
+            }
+            .haofang_list{
+                margin-top: 25px;
+                width: 315px;
+                height: 57px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    float: left;
+                }
+                .hf_word{
+                    width: 256px;
+                    height: 57px;
+                    float: right;
+                    .hf_title_word{
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #222;
+                    }
+                    .hf_desc_word{
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+    //好房亮点 end
+
+    //推荐经纪人
+    .sub_mod_box{ 
+        width: 100%;
+        height: auto;
+        .mod_cont{
+           border-bottom: 1px solid rgb(246, 246, 246);
+            width: 335px;
+            height: 351px;
+            margin: 0 auto;
+            .recommend_agent_tit{
+                width: 100%;
+                height: 16px; line-height: 16px;
+                margin:12px 0 ;
+                font-size: 16px;
+                border: none;
+                font-weight: 700;
+            }
+            .prson{
+            
+                width: 100%;
+                height: 274px;
+                ul{
+                  
+                    li{
+                        margin-top: 20px;
+                        position: relative;
+                        
+                        width: 100%;
+                        height: 91px;
+                        .head_icon{
+                           width: 40px;
+                           height: 53px;
+                           float: left; 
+                           #head_icon1{
+                            width: 100%;
+                            height: 40px;
+                            border-radius: 100%;
+                            background: url("../image/详情页-image/头像1.jpg")no-repeat 0 0;
+                            background-size: 100%;
+                           }
+                           #head_icon2{
+                            margin-top: -5px;
+                            width: 100%;
+                            height: 10px;
+                            background: url("../image/详情页-image/头像-新光.png")no-repeat 0 0;
+                            background-size: 100%;
+                            }
+                        }
+                    //midele
+                    .ke-agent-sj-info{
+                       
+                        width: 187.5px;
+                        height: 62px;
+                        float: left;
+                        
+                        .name{
+                            width: 185px;
+                            height: 20px;
+                            
+                        .name_1{
+                                color: #101d37;
+                                margin-left: 6px;
+                                font-size: 16px;
+                                font-weight: 700;
+                                float: left;
+                            }
+                        .compony{
+                            font-size: 12px;
+                                color: #9399a5;
+                                padding: 1.5px;
+                                margin-left: 6.4px;
+                                background: #eff0f2;
+                                display: inline-block;
+                            }
+                        }
+                        .recommend-agent-score{ 
+                                width: 185px;
+                                height: 25px;
+                                float: left;
+                            span{
+                                line-height: 25px;
+                              
+
+                                i{
+                                    font-family: DIN-Bold;
+                                    font-style: normal;
+                                    font-size: 16px;
+                                    color: #FA5741;
+                                    font-weight: bold;
+                                    margin-right: 2px;
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                        .ke-agent-sj-desc{
+                            float: left;
+                            height: 16px;
+                            margin-top: -15px;
+                            color: #9399a5;
+                        }
+                    }//middle end
+               
+                    .ke-agent-sj-special-tag{
+                        width: 281px;
+                        height: 21px;
+                        display: flex;
+                        margin-left: 3.375rem;
+                        margin-top:80px;
+                       
+                        font-weight: 500;
+
+                        .color_3072F6{
+                            margin: 4px 0 0 10px;
+                          
+                            height: 16px;
+                            background-color: rgba(48, 114, 246, .1);
+                            color: #3072f6;
+                            font-size: 7px;
+                        }
+                    }
+
+                    .ke-agent-sj-fr{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 100px;
+                        height: 46px;
+
+                        .ke-agent-sj-im{
+                            float: left;
+                            width: 40px;
+                            height: 40px;
+                            background: url("../image/详情页-image/agent_im_赤兔图片转换器_20210719174318.jpg")no-repeat 0 0;
+                            background-size: 100% 100%;
+                        }
+                        .ke-agent-sj-phone{
+                            float: left;
+                            margin-left: 16px;
+                            width: 40px;
+                            height: 40px;
+                            background: url("../image/详情页-image/agent_phone_赤兔图片转换器_20210719174318.jpg")no-repeat 0 0;
+                            background-size: 100% 100%;
+                        }
+
+                    }
+
+
+
+
+                }//li end
+              }
+            }
+        }
+    }
+    //推荐经纪人 end
+
+    //户型分间
+    .house_model{
+        width: 100%;
+        height: auto;
+        .pictext{
+           
+            width: 335px;
+            height: 142px;
+        .item_list{ 
+            width: 211px;
+            height: 142px;
+            float: left;
+            .house_model_tit{
+                font-size: 16px;
+                display: flex;
+                border: none;
+                height: 1rem;
+                line-height: 1rem;
+                ;
+            } 
+            p{
+                margin-top: 10px;
+                font-size: 12px;
+                color: #9c9fa1;
+                padding-right: 15px;
+
+            }
+        }
+        .mod_media{
+            float: right;
+            .media_main{
+                .lazyload{
+                    width: 108px;
+                    height: 81px;
+                }
+            }
+        }
+    }
+    }
+    //户型分间 end
+
+    //更多房源信息
+    .btn{
+     width: 335px;
+     height: 49px;
+     background-color: #f9f9f9;
+     color: #5680A6;
+     font-size: 16px;
+     font-weight: 700;
+     margin: 0 20px 20px;
+    }
+     //更多房源信息end
+   
+
+     //地图
+     .mod_cont{
+         width: 100%;
+         height: auto;
+         position: relative;
+         a{
+                   
+            img{
+             width: 100%;
+             height: 210px;
+              
+         }
+            .map_marker{
+            width: 136px;
+            height: 50px;
+            background-color: white;
+            position: absolute;
+            top: 50px;
+           left: 50%-18px;
+           z-index: 10;
+          
+            .marker{
+                position: absolute;
+                bottom: -15px;
+                left: 43%;
+                z-index: 3;
+                width: 1.125*2rem;
+                height: 1.125*2rem;
+                background-color: rgba(66,133,244,.5);
+                border: .0625rem solid #4285f4;
+                border-radius: 100%;
+                 
+            }
+
+           
+            .marker_desc{
+                padding: 13px 20px;
+                p{
+                    font-size: 16px;
+                    color: black;
+                }
+                ::after{
+                    content: "";
+                    position: absolute;
+                    bottom: -.5rem;
+                    border-top: .625*2rem solid white;
+                    border-left: .625*2rem solid transparent;
+                    border-right: .625*2rem solid transparent;
+                    width: 0;
+                    height: 0;
+                    left: 51%;
+                    transform: translateX(-50%);
+                
+                    z-index: 20;
+                }
+            }
+         } 
+        }
+       
+        
+     }
+     //地图 end
+
+     //房源介绍
+     .house_introduce{
+         width: 100%;
+         height: auto;
+
+         h3{
+            
+            width: 335px;
+            height: 68px;
+            line-height: 68px;
+            color: black;
+            margin: 0 auto;
+         }
+         div{
+            width: 335px;
+            height: 182px;
+            color: black;
+            margin-top: -4px;
+            line-height: 23px;
+            font-size: 16px;
+            margin: 0 auto;  
+         }
+     }
+     //房源介绍 end
+
+     //经纪人带看反馈
+     .sub_mod_box_house_yezhushuo{
+         margin-top: 10px;
+         width: 100%;
+         height: auto;
+         .mod_tit_complex{
+            border-top: 1px solid rgb(246, 246, 246);
+            width: 335px;
+            height: 63px;
+            margin: 0 auto;
+            padding: 21px 0;
+           .mod_tit_complex_text{
+            
+               span{
+                font-size: 16px;
+                float: left; 
+                color: black;
+                font-weight: 700;
+                }
+                 a{
+                     float: right;
+                     span{
+                        font-size: 12px;
+                        margin-top: 5px; color: #9c9fa1;
+                     }
+                     img{ 
+                        width: 7.5px;
+                        height: 16px;
+                        margin-top: -8px;
+                        margin-left: 10px;
+                     }
+                 }
+            
+           }
+             
+         }
+         .agent-daikan{
+             width: 335px;
+             height: 40px;
+             margin: 0 auto;
+             display: flex;
+           
+             .agent_portrait{
+
+                 img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                 }
+             }
+             .agent_info{
+                 width: 155px;
+                 height: 40px;
+                .agent_name{
+
+                    label{
+                        font-size: 16px;
+                        font-weight: 0;
+                    }
+                    span{
+
+                    }
+                    .agent-credentials{
+
+                    }
+                }
+                p{
+                    width: 149px;
+                }
+             }
+             .ke-agent-sj-fr{
+              
+                width: 128px;
+                height: 40px;
+                margin-left: 50px;
+                .ke-agent-sj-im{
+                   float: left;
+                    width: 40px;
+                    height: 40px;
+                    background: url("../image/详情页-image/agent_im_赤兔图片转换器_20210719174318.jpg")no-repeat 0 0;
+                    background-size: 100% 100%;
+                }
+                .ke-agent-sj-phone{
+                   float: left;
+                    margin-left: 16px;
+                    width: 40px;
+                    height: 40px;
+                    background: url("../image/详情页-image/agent_phone_赤兔图片转换器_20210719174318.jpg")no-repeat 0 0;
+                    background-size: 100% 100%;
+                }
+
+                
+
+            }
+         }
+         .mod_cont{
+            
+             width: 355px;
+             height: 50px;
+           
+             font-size: 16px;
+             margin: 0 auto; 
+             margin-top: 20px;
+
+             overflow:hidden;
+             text-overflow:ellipsis;
+             white-space:nowrap;
+         }
+     }
+     //经纪人带看反馈 end
+
+     //房源动态
+     .house_record{
+        margin-left: 10px;
+         width: 100%;
+         height: 209px;
+         display: inline-block;
+         .mod_tit{
+            margin: 0 auto;
+            width: 355px;
+            height: 68px;
+            line-height: 68px;
+            font-weight: 700;
+         }
+         .mod_cont{
+             width: 355px;
+             height: 72.5px;
+             .data{
+                width: 100%;
+                margin-left: 12px;
+                display: flex;
+                padding: 0 0 24px;
+                border-bottom: 1px solid rgb(246, 246, 246);
+                 .box_col{
+                    width: 33%;
+                     height: 48.5px;
+                     .gray{
+                        color: #9c9fa1;
+                        font-size: 13px;
+                     }
+                     strong{
+                        color: #333;
+                        font-weight: lighter;
+                        font-size: 26px;
+                     }
+                 }
+             }
+         }
+         .mod_app{
+            
+            width: 335px;
+            height: 112.5px;
+            padding: 21.5px 20px 21.5px 0;
+            margin: 0 auto;
+             .app_title{
+                
+                font-size: 16px;
+                text-align: center;
+             }
+             .lazyload_ulog{
+                width: 180px;
+                height: 37px;
+                margin: 16px auto;
+                border: 1px solid #00A75B;
+                color: #00A75B;  
+                text-align: center;
+                padding: 10px 0;
+            }
+         }
+     }
+     //房源动态 end
+
+     //新世纪逸彩庭院
+     .newword{
+    
+         width: 355px;
+         height: auto;
+         margin: 0 0 0 12px;
+         margin-top: 25px;
+         padding: 0 0 20px 0;
+         //标题头
+        .newword_tit{
+           
+            width: 335px;
+            height: 68px;
+            line-height: 68px;
+            position: relative;
+            span{
+                font-size: 24px;
+                color: #333;
+                font-weight: 700;
+            }
+            p{
+                height: 100%;
+                line-height: 68px;
+                float: right;
+                margin-right: 15px;
+                font-weight: 400;
+                font-size: 13px;
+                color: #9c9f9a;
+               &::after{
+                    content: "";
+                    position: absolute;
+                    top: 28px;
+                    right: 0px;
+                    background: url("../image/详情页-image/向右箭头.png")no-repeat;
+                    background-size: 100% 100%;
+                    width: 12px;
+                    height: 12px;
+
+                
+                }
+  
+            }
+                
+            
+            
+        }
+        //参考价
+        .newwrod_price{
+            border-bottom: 1px solid rgb(246, 246, 246);
+            width: 335px;
+            height: 130px;
+            margin: 18px 20px 0 0;
+            padding-bottom: 20px;
+            .price_flex{
+                width: 335px;
+                height: 112px;
+                display: flex;
+                .item_resblock{
+                    width: 212px;
+                    height: 112px;
+                    .house_model_tit{
+                        width: 100%;
+                        height: 16px;
+                        line-height: 16px;
+                        margin: 18px 0 12px;
+                        color: #394043;
+                        font-size: 16px;
+                        .red{
+                            color: red;
+                        }
+                    }
+                    p{
+                        width: 261px;
+                        height: 19px;
+                        padding: 0 15px 0 0;
+                        margin: 0 0 3px;
+                        color: #9c9fa1;
+                        font-size: 13px;
+                    }
+                }
+               
+
+                    img{
+                        width: 104px;
+                        height: 81px;
+                        margin: 18px;
+                    }  
+                
+                
+            }
+        }//参考价 end 
+
+        //小区行情周波
+        .newwrod_week{
+            border-bottom: 1px solid rgb(246, 246, 246);
+            width: 335px;
+            height: 128px;
+            padding: 24px 0;
+
+           
+            .newword_tit{
+                width: 335px;
+                height: 20px;
+                line-height: 20px;
+                position: relative;
+                span{
+                    font-size: 16px;
+                    color: #333;
+                    font-weight: 700;
+                    float: left;
+                }
+                .new_data{
+                  
+                  
+                    float: left;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #9c9f9a;
+                    margin: 0 0 0 4px;
+                }
+                p{
+                   line-height: 20px;
+                  
+                    float: right;
+                    margin-right: 15px;
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: #9c9f9a;
+                   &::after{
+                        content: "";
+                        position: absolute;
+                        top: 3px;
+                        right: 0px;
+                        background: url("../image/详情页-image/向右箭头.png")no-repeat;
+                        background-size: 100% 100%;
+                        width: 12px;
+                        height: 12px;
+    
+                    
+                    }
+      
+                }
+                    
+                
+                
+            }
+
+            .content-box{
+                width: 335px;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                .common-price-box{
+                   
+                    width: 186px;
+                    height: 61px;
+                   
+                    .price{
+                        width: 186px;
+                        height: 24px;
+                        line-height: 24px;
+                        margin-top: 11px;
+                        display: flex;
+                        .number{
+                            font-size: 24px;
+                            color: #222;
+                        }
+                        .number-unit{   
+                            font-size: 12px;
+                            color: #222;
+                            margin: 0 8px 0 0;
+                        }
+                        i{
+                            color: red;
+                            font-size: 12px;
+                            line-height: 24px;
+                        }
+                        .percent-title{
+                            font-size: 12px;
+                            color:#222;     
+                        }
+                        .triangle{
+                            
+                        }
+                    }
+                    .price-name{
+                      color: #999;
+                      font-size: 12px;
+                      display: flex;
+                      i{
+                        width: 13px;
+                        height: 13px;
+                        line-height: 13px;
+                        background: url(../image/详情页-image/问号.png);
+                        background-size: 100% 100%;
+                        margin: 3px 3px;
+                    }
+                    }
+                }
+                .qushi{
+                    width: 90px;
+                    height: 50px;
+                    line-height: 50px;
+                    background: url("../image/详情页-image/qushi.png")no-repeat 0 0;
+                    background-size: 100% 100%;
+                    
+                }
+            }
+        }
+        //小区行情周波 end
+
+     } //新世纪逸彩庭院 end
+    
+    
+}//page end

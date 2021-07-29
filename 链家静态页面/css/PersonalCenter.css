@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+* .page {
+  width: 100%;
+  height: auto;
+}
+* .page .user_comp {
+  width: 100%;
+  height: 249px;
+  background: url(../image/个人中心绿色背景.png) no-repeat 0 0;
+  background-size: 375px 249px;
+}
+* .page .user_comp header {
+  width: 100%;
+}
+* .page .user_comp header .nav {
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: white;
+}
+* .page .user_comp header .nav .left {
+  width: 112px;
+  height: 49px;
+  display: flex;
+}
+* .page .user_comp header .nav .left a {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
+* .page .user_comp header .nav .left a .l_icon {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: url("../image/个人中心雪碧图.png") no-repeat 0 0;
+  background-size: 135px 240px;
+  background-position: -5px -31px;
+  margin-top: 10px;
+}
+* .page .user_comp header .nav .left .city_warp {
+  height: 49px;
+  line-height: 49px;
+  margin-left: 20px;
+}
+* .page .user_comp header .nav .middle {
+  width: 112px;
+  height: 49px;
+  background: url("../image/链家logo.png") no-repeat 0 0;
+  background-size: 85px 49px;
+  background-position: 20px 0px;
+}
+* .page .user_comp header .nav .right {
+  width: 112px;
+  height: 49px;
+  line-height: 49px;
+}
+* .page .user_comp header .nav .right .r_icon {
+  width: 50px;
+  height: 49px;
+  background: url("../image/个人中心雪碧图.png") no-repeat 0 0;
+  background-size: 187px 370px;
+  background-position: 17px 6px;
+  float: right;
+  margin-right: 15px;
+}
+* .page .user_comp header .img_head {
+  width: 54px;
+  height: 54px;
+  margin-top: 32px ;
+  margin-left: 162.5px;
+}
+* .page .user_comp header .user_num {
+  width: 375px;
+  height: 37px;
+  margin-top: 18.4px;
+}
+* .page .user_comp header .user_num a {
+  border: 0.5px solid white;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  width: 89px;
+  height: 37px;
+  line-height: 37px;
+  margin-left: 95px;
+}
+* .page .user_comp header .user_num :nth-child(2) {
+  margin-left: 4.8px;
+}
+* .page .content_area {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+* .page .content_area .pagelist {
+  width: 375px;
+}
+* .page .content_area .pagelist .link_list {
+  width: 375px;
+  height: auto;
+  margin: 0 auto;
+}
+* .page .content_area .pagelist .link_list li {
+  width: 100%;
+  height: 51px;
+  background-color: white;
+  border: 0.5px solid #f9f9f9;
+}
+* .page .content_area .pagelist .link_list li a {
+  color: black;
+  margin-left: 15px;
+  height: 51px;
+  line-height: 51px;
+}
+* .page .content_area .pagelist .link_list li .list_item {
+  width: 16px;
+  height: 16px;
+  line-height: 51px;
+  background: url(../image/个人中心list-icon.png) no-repeat 0 0;
+  background-size: 100% 500%;
+  background-position-y: 0px;
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+* .page .content_area .pagelist .link_list li .right_arrow {
+  float: right;
+  border-right: 1px solid #999;
+  border-top: 1px solid #999;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+* .page .content_area .pagelist .link_list li .two {
+  background: url(../image/个人中心list-icon.png) no-repeat 0 0;
+  background-size: 100% 500%;
+  background-position-y: -15px;
+}
+* .page .content_area .pagelist .link_list li .three {
+  background: url(../image/个人中心list-icon.png) no-repeat 0 0;
+  background-size: 100% 500%;
+  background-position-y: -32px;
+}
+* .page .content_area .pagelist .link_list li .four {
+  background: url(../image/个人中心list-icon.png) no-repeat 0 0;
+  background-size: 100% 500%;
+  background-position-y: -48px;
+}
+* .page .content_area .pagelist .link_list li .five {
+  background: url(../image/个人中心list-icon.png) no-repeat 0 0;
+  background-size: 100% 500%;
+  background-position-y: -64px;
+}

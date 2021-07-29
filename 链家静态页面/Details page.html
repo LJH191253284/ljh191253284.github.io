@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/DetailsPage.css">
+</head>
+
+<body>
+    <div class="page">
+
+
+       <!--导航栏开始-->
+       <nav class="nav">
+        <div class="left">
+            <a href="index.html">
+                <div class="l_icon"></div>
+            </a>
+            <div class="city_warp">广州<i class="glyphicon glyphicon-menu-down"></i></div>
+        </div>
+        <div class="middle">
+            <div class="logo"></div> 
+        </div>
+        <div class="right">
+            <div class="r_icon"></div>
+        </div>
+        </nav>
+        <!--导航栏结束-->
+
+        <!--图片层  开始-->
+        <div class="mengban">
+            <ul>
+
+                <li><img class="lazyload"
+                        origin-src="https://image1.ljcdn.com/110000-inspection/apc_dwvBbsaUb_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        src="https://image1.ljcdn.com/110000-inspection/apc_dwvBbsaUb_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        alt="客厅"></li>
+                <li><img class="lazyload"
+                        origin-src="https://image1.ljcdn.com/110000-inspection/apc_LYLHGVSZD_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        src="https://image1.ljcdn.com/110000-inspection/apc_LYLHGVSZD_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        alt="卧室A"></li>
+                <li><img class="lazyload"
+                        origin-src="https://image1.ljcdn.com/hdic-frame/standard_99210773-58c3-43d4-bc5a-3509f61b1b47.png!m_fill,w_500,h_280,l_frame,f_jpg,ls_30"
+                        src="https://image1.ljcdn.com/hdic-frame/standard_99210773-58c3-43d4-bc5a-3509f61b1b47.png!m_fill,w_500,h_280,l_frame,f_jpg,ls_30"
+                        alt="户型图"></li>
+                <li><img class="lazyload"
+                        origin-src="https://image1.ljcdn.com/110000-inspection/apc_8sKPOJhyn_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        src="https://image1.ljcdn.com/110000-inspection/apc_8sKPOJhyn_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        alt="卧室B"></li>
+                <li><img class="lazyload"
+                        origin-src="https://image1.ljcdn.com/110000-inspection/pc0_RgHWs8I85_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        src="https://image1.ljcdn.com/110000-inspection/pc0_RgHWs8I85_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        alt="厨房"></li>
+                <li><img class="lazyload"
+                        origin-src="https://image1.ljcdn.com/110000-inspection/pc0_kOdFppVQU_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        src="https://image1.ljcdn.com/110000-inspection/pc0_kOdFppVQU_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        alt="卫生间"></li>
+                <li><img class="lazyload"
+                        origin-src="https://image1.ljcdn.com/110000-inspection/pc0_mWBev4tgQ_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        src="https://image1.ljcdn.com/110000-inspection/pc0_mWBev4tgQ_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        alt="阳台A"></li>
+                <li><img class="lazyload"
+                        origin-src="https://image1.ljcdn.com/110000-inspection/pc0_23IGs3hqF_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        src="https://image1.ljcdn.com/110000-inspection/pc0_23IGs3hqF_1.jpg!m_fill,w_500,h_280,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        alt="阳台B"></li>
+            </ul>
+
+            <!--右下角 页数 -->
+            <div class="opt_bar">
+                <a href="javascript:" class="count">
+                    <span data-mark="img_index">1</span>/
+                    9 </a>
+            </div>
+            <!--右下角 页数 end-->
+
+            <!--必看好房-->
+            <div class="haofang_banner">
+                <img class="haofang_icon" src="https://img.ljcdn.com/beike/bikanhaofang/1582116185356.png" alt="">
+                <div class="tags">
+                    <div class="tag-item">
+                        <img class="tag_icon" src="https://img.ljcdn.com/beike/haofanglogo/1571826242637.png" alt="">
+                        <span>品质小区</span>
+                    </div>
+
+                    <div class="tag-item">
+                        <img class="tag_icon" src="https://img.ljcdn.com/beike/haofanglogo/1571826242637.png" alt="">
+                        <span>店长推荐</span>
+                    </div>
+
+                    <div class="tag-item">
+                        <img class="tag_icon" src="https://img.ljcdn.com/beike/haofanglogo/1571826242637.png" alt="">
+                        <span>三层严选</span>
+                    </div>
+                </div>
+            </div>
+            <!--必看好房 end-->
+
+
+        </div>
+        <!--图片层  end-->
+
+        <!--标题 start-->
+        <div class="house_title">
+            <h3 class="detail_title">满五年，南向小两房，交通便利，小区环境好</h3>
+
+            <div class="follow">
+                <div class="head-icon"> </div>
+                <span>关注</span>
+            </div>
+
+
+            <div class="tit">
+                <div class="agent">
+                    <div class="icon"></div>
+                    <span>房源发布机构</span>
+                </div>
+                <div class="agent">
+                    <div class="icon"></div>
+                    <span>风险提示</span>
+                </div>
+
+            </div>
+
+        </div>
+        <!--标题 end-->
+
+        <!--房子基本信息-->
+        <h3 class="similar_data">
+            <div class="price_box">
+                <div class="similar_data_detail">
+                    <p class="red big">
+                        <span data-mark="price">295万</span>
+                        <span data-mark="unit" data-unit="">元</span>
+                    </p>
+                    <p class="gray big">售价</p>
+                </div>
+                <div class="similar_data_detail">
+                    <p class="red big">2室2厅</p>
+                    <p class="gray big">房型</p>
+                </div>
+                <div class="similar_data_detail">
+                    <p class="red big">73.8m²</p>
+                    <p class="gray big">建筑面积</p>
+                </div>
+            </div>
+        </h3>
+        <!--房子基本信息 end -->
+
+        <!--打开APP-->
+        <div class="pictext flexbox lazyload_ulog agent_download arrow agent_download_head" data-mark="download_app"
+            data-detail_info="{&quot;awaken_app_info&quot;:{&quot;type&quot;:&quot;universalLink&quot;,&quot;download_url&quot;:&quot;https:\/\/linkm.lianjia.com\/?schema=lianjia%253A%252F%252Fershou%252Fdetail%253FhouseCode%253D108401621855&amp;redirect_url=http%253A%252F%252Fad.data.lianjia.com%252Fcallback%252Fsem%253FutmSource%253Dlianjia_zhilian_m%2526platformType%253D2&amp;ssid=5c3ba53f-d5b5-4b36-bb59-c2d87c836082&amp;uuid=61ec5341-2335-4d62-861a-e58d6a825111&amp;refer=https%3A%2F%2Fm.lianjia.com%2Fgz%2F&amp;current_url=https%253A%252F%252Fm.lianjia.com%252Fgz%252Fershoufang%252F108401621855.html&amp;sign=2b0787300648c9ac88cb409677cf0631&quot;,&quot;scheme&quot;:&quot;&quot;}}"
+            data-info="ljweb_mod=download_jingjiren1" data-evtid="10380" data-ulog="ljweb_mod=download_jingjiren1">
+            <div class="download_logo">
+                <img src="https://s1.ljcdn.com/hulk-web/static/m/images/common/logo300x300.png?_v=20210716191023b5e"
+                    alt="下载链家APP">
+
+            </div>
+            <div class="download_desc">打开链家APP ，在线咨询经纪人</div>
+            <span class="glyphicon glyphicon-menu-right"></span>
+        </div>
+        <!--打开APP end-->
+
+        <!--房子详情信息-->
+        <ul class="house_description big lightblack lazyload_ulog" data-evtid="13904"
+            data-ulog="pid=lianjiamweb&amp;source_type=二手房源详情信息&amp;event=mModuleExpo">
+            <div class="tag_group">
+                <span class="">VR房源</span>
+                <span class="">满五年</span>
+                <span class="">随时看房</span>
+                <span class="">有电梯</span>
+            </div>
+            <li class="short"><span class="gray">单价：</span>39973元/平</li>
+            <li class="short"><span class="gray">挂牌：</span>2020.09.19</li>
+            <li class="short"><span class="gray">朝向：</span>东南</li>
+            <li class="short"><span class="gray">楼层：</span>中楼层/20</li>
+            <li class="short"><span class="gray">楼型：</span>塔楼</li>
+            <li class="short"><span class="gray">电梯：</span>有电梯</li>
+            <li class="short"><span class="gray">装修：</span>简装</li>
+            <li class="short"><span class="gray">年代：</span>2007年
+
+            </li>
+            <li class="short"><span class="gray">用途：</span>普通住宅</li>
+            <li class="short"><span class="gray">权属：</span>商品房</li>
+
+            <li class="long arrow">
+                <!-- 首付预算: 计算失败 -->
+                <!-- 首付预算: 计算成功 -->
+                <div class="shoufu-wrap">
+                    <a href="https://tax.jiaoyi.lianjia.com/sf/detail?cityCode=440100&amp;houseCode=108401621855&amp;taxStatus=1&amp;source=lianjia&amp;ots=1626504421000&amp;cjj=2950000&amp;sk=265f148025f4b271dbdf0120c5d26ee3"
+                        class="post_ulog" data-evtid="13905"
+                        data-ulog="pid=lianjiamweb&amp;source_type=房源页首付入口点击&amp;event=mElementClick&amp;click_name=shoufurukou_succeed">
+                        <span class="gray">首付预算：</span>
+                        <span>净首付99万，月供、税费点击查... <span class="glyphicon glyphicon-menu-right"></span></span>
+
+                    </a>
+                </div>
+                <div class="payment_guide" data-act="close_guide">
+
+                    <div class="arrow_down"></div>
+                </div>
+            </li>
+            <li class="long  arrow "><a href="https://m.lianjia.com/gz/xiaoqu/2110343238861226/" class="post_ulog"
+                    data-evtid="10347" data-ulog="">
+                    <span class="gray">小区：</span>新世界逸彩庭园</a> <span class="glyphicon glyphicon-menu-right"></span></li>
+            <li class="long arrow ">
+                <a href="http://zfcj.gz.gov.cn/xysj/xzzx/qtl/" target="_blank">
+                    <span class="gray">政策：</span>广州市房屋交易政策指引告知书 <span class="glyphicon glyphicon-menu-right"></span></a>
+            </li>
+        </ul>
+        <!--房子详情信息 end-->
+
+
+        <!--好房亮点-->
+        <div class="haofang-wrap">
+
+            <div class="good_house " data-view-evtid="21783" data-view-event="mElementExpo"
+                data-action="display_num=1&amp;detail=品质小区&amp;housedel_id=108401621855">
+                <a class="CLICKDATA" data-click-evtid="21782" data-click-event="mElementClick"
+                    href="/ershoufang/haofang/master?cityId=440100&amp;region=jiaokou1">
+                    <img class="icon_logo" src="https://img.ljcdn.com/beike/haofanglogo/1571825047606.png">
+                    <h3>好房亮点</h3>
+                    <span class="arrow">滘口共23套房源入选 <span class="glyphicon glyphicon-menu-right"></span>
+                </a>
+                <div class="haofang_list">
+                    <img class="haofang_icon"
+                        src="https://image1.ljcdn.com/materials/appindexconf/8dba05da9f2f657da60e031e458c67fe.png">
+                    <div class="hf_word">
+                        <p class="hf_title_word">品质小区</p>
+                        <p class="hf_desc_word">封闭式管理，24小时安保，非常安全；绿化率36.0%，环境优美</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--好房亮点 end-->
+
+        <!--推荐经纪人-->
+        <div class="sub_mod_box">
+            <div class="mod_cont">
+                <div class="recommend_agent_tit">推荐经纪人</div>
+
+                <div class="prson">
+                    <ul>
+
+                        <li>
+                            <div class="head_icon">
+                                <div id="head_icon1"></div>
+                                <div id="head_icon2"></div>
+                            </div>
+
+                            <div class="ke-agent-sj-info">
+                                <div class="name">
+                                    <div class="name_1">许芝琴</div>
+                                    <div class="compony">房六六</div>
+                                </div>
+
+                                <p class="recommend-agent-score">
+                                    <span><i>520</i>贝壳分 | </span><span>5.0分</span>
+                                </p>
+
+                                <div class="ke-agent-sj-desc"> 响应快速，擅长把握用户需求</div>
+                            </div>
+
+                            <div class="ke-agent-sj-special-tag">
+                                <div class="color_3072F6">
+                                    贝壳分极佳</div>
+                                <div class="color_3072F6">
+                                    业务精英前10%</div>
+                                <div class="color_3072F6">
+                                    VR找房专家</div>
+                                <div class="color_3072F6" style="background-color: transparent;"></div>
+
+                            </div>
+                            <!--图标-->
+                            <div class="ke-agent-sj-fr">
+                                <div class="ke-agent-sj-im ke-agent-sj-im-100001362 ke-agent-sj-im-1000001000810855"
+                                    data-bl="agentim" data-ucid="1000001000810855"
+                                    data-source-port="shangyehua_ershou_lianjia_m"
+                                    data-source-extends="app_data={&quot;business_dig_v&quot;:{&quot;u&quot;:1000001000810855,&quot;v&quot;:&quot;V3&quot;,&quot;s&quot;:&quot;NATURAL&quot;,&quot;adId&quot;:100001362,&quot;flow&quot;:&quot;natural&quot;,&quot;b&quot;:&quot;DisplayDiamondEsV5Builder&quot;,&quot;p&quot;:&quot;&quot;,&quot;g&quot;:&quot;&quot;,&quot;sid&quot;:&quot;1000001000810855_2110343238861226&quot;,&quot;rid&quot;:&quot;5668187188180295680&quot;}}">
+                                </div>
+                                <div
+                                    class="ke-agent-sj-phone ke-agent-sj-phone-100001362 ke-agent-sj-phone-1000001000810855">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="head_icon">
+                                <div id="head_icon1"></div>
+                                <div id="head_icon2"></div>
+                            </div>
+
+                            <div class="ke-agent-sj-info">
+                                <div class="name">
+                                    <div class="name_1">许芝琴</div>
+                                    <div class="compony">房六六</div>
+                                </div>
+
+                                <p class="recommend-agent-score">
+                                    <span><i>520</i>贝壳分 | </span><span>5.0分</span>
+                                </p>
+
+                                <div class="ke-agent-sj-desc"> 响应快速，擅长把握用户需求</div>
+                            </div>
+
+                            <div class="ke-agent-sj-special-tag">
+                                <div class="color_3072F6">
+                                    贝壳分极佳</div>
+                                <div class="color_3072F6">
+                                    业务精英前10%</div>
+                                <div class="color_3072F6">
+                                    VR找房专家</div>
+                                <div class="color_3072F6" style="background-color: transparent;"></div>
+
+                            </div>
+                            <!--图标-->
+                            <div class="ke-agent-sj-fr">
+                                <div class="ke-agent-sj-im ke-agent-sj-im-100001362 ke-agent-sj-im-1000001000810855"
+                                    data-bl="agentim" data-ucid="1000001000810855"
+                                    data-source-port="shangyehua_ershou_lianjia_m"
+                                    data-source-extends="app_data={&quot;business_dig_v&quot;:{&quot;u&quot;:1000001000810855,&quot;v&quot;:&quot;V3&quot;,&quot;s&quot;:&quot;NATURAL&quot;,&quot;adId&quot;:100001362,&quot;flow&quot;:&quot;natural&quot;,&quot;b&quot;:&quot;DisplayDiamondEsV5Builder&quot;,&quot;p&quot;:&quot;&quot;,&quot;g&quot;:&quot;&quot;,&quot;sid&quot;:&quot;1000001000810855_2110343238861226&quot;,&quot;rid&quot;:&quot;5668187188180295680&quot;}}">
+                                </div>
+                                <div
+                                    class="ke-agent-sj-phone ke-agent-sj-phone-100001362 ke-agent-sj-phone-1000001000810855">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="head_icon">
+                                <div id="head_icon1"></div>
+                                <div id="head_icon2"></div>
+                            </div>
+
+                            <div class="ke-agent-sj-info">
+                                <div class="name">
+                                    <div class="name_1">许芝琴</div>
+                                    <div class="compony">房六六</div>
+                                </div>
+
+                                <p class="recommend-agent-score">
+                                    <span><i>520</i>贝壳分 | </span><span>5.0分</span>
+                                </p>
+
+                                <div class="ke-agent-sj-desc"> 响应快速，擅长把握用户需求</div>
+                            </div>
+
+                            <div class="ke-agent-sj-special-tag">
+                                <div class="color_3072F6">
+                                    贝壳分极佳</div>
+                                <div class="color_3072F6">
+                                    业务精英前10%</div>
+                                <div class="color_3072F6">
+                                    VR找房专家</div>
+                                <div class="color_3072F6" style="background-color: transparent;"></div>
+
+                            </div>
+                            <!--图标-->
+                            <div class="ke-agent-sj-fr">
+                                <div class="ke-agent-sj-im ke-agent-sj-im-100001362 ke-agent-sj-im-1000001000810855"
+                                    data-bl="agentim" data-ucid="1000001000810855"
+                                    data-source-port="shangyehua_ershou_lianjia_m"
+                                    data-source-extends="app_data={&quot;business_dig_v&quot;:{&quot;u&quot;:1000001000810855,&quot;v&quot;:&quot;V3&quot;,&quot;s&quot;:&quot;NATURAL&quot;,&quot;adId&quot;:100001362,&quot;flow&quot;:&quot;natural&quot;,&quot;b&quot;:&quot;DisplayDiamondEsV5Builder&quot;,&quot;p&quot;:&quot;&quot;,&quot;g&quot;:&quot;&quot;,&quot;sid&quot;:&quot;1000001000810855_2110343238861226&quot;,&quot;rid&quot;:&quot;5668187188180295680&quot;}}">
+                                </div>
+                                <div
+                                    class="ke-agent-sj-phone ke-agent-sj-phone-100001362 ke-agent-sj-phone-1000001000810855">
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--推荐经纪人 end-->
+
+        <!--户型分间 -->
+        <div class="house_model">
+            <div class="pictext flexbox" data-act="viewImage" data-offset="0" noswipe="1" data-show-offset="0"
+                data-info="[{&quot;type&quot;:&quot;\u6237\u578b&quot;,&quot;url&quot;:&quot;https:\/\/image1.ljcdn.com\/hdic-frame\/standard_99210773-58c3-43d4-bc5a-3509f61b1b47.png!m_fill,h_750,l_frame,f_jpg,ls_30&quot;}]"
+                data-frame="[{&quot;roomName&quot;:&quot;\u5ba2\u5385&quot;,&quot;name&quot;:&quot;\u5ba2\u5385&quot;,&quot;area&quot;:20.06,&quot;orientation&quot;:&quot;\u5357&quot;,&quot;window&quot;:&quot;\u666e\u901a\u7a97&quot;,&quot;sort&quot;:1},{&quot;roomName&quot;:&quot;\u5367\u5ba4A&quot;,&quot;name&quot;:&quot;\u5367\u5ba4A&quot;,&quot;area&quot;:11.16,&quot;orientation&quot;:&quot;\u6682\u65e0\u6570\u636e&quot;,&quot;window&quot;:&quot;\u672a\u77e5\u7a97\u6237\u7c7b\u578b&quot;,&quot;sort&quot;:2.1},{&quot;roomName&quot;:&quot;\u5367\u5ba4B&quot;,&quot;name&quot;:&quot;\u5367\u5ba4B&quot;,&quot;area&quot;:7.62,&quot;orientation&quot;:&quot;\u6682\u65e0\u6570\u636e&quot;,&quot;window&quot;:&quot;\u672a\u77e5\u7a97\u6237\u7c7b\u578b&quot;,&quot;sort&quot;:2.2},{&quot;roomName&quot;:&quot;\u53a8\u623f&quot;,&quot;name&quot;:&quot;\u53a8\u623f&quot;,&quot;area&quot;:4,&quot;orientation&quot;:&quot;\u5357&quot;,&quot;window&quot;:&quot;\u666e\u901a\u7a97&quot;,&quot;sort&quot;:3},{&quot;roomName&quot;:&quot;\u536b\u751f\u95f4&quot;,&quot;name&quot;:&quot;\u536b\u751f\u95f4&quot;,&quot;area&quot;:3.25,&quot;orientation&quot;:&quot;\u4e1c&quot;,&quot;window&quot;:&quot;\u666e\u901a\u7a97&quot;,&quot;sort&quot;:4},{&quot;roomName&quot;:&quot;\u9633\u53f0A&quot;,&quot;name&quot;:&quot;\u9633\u53f0A&quot;,&quot;area&quot;:5.53,&quot;orientation&quot;:&quot;\u4e1c \u5357&quot;,&quot;window&quot;:&quot;\u666e\u901a\u7a97&quot;,&quot;sort&quot;:5.1},{&quot;roomName&quot;:&quot;\u9633\u53f0B&quot;,&quot;name&quot;:&quot;\u9633\u53f0B&quot;,&quot;area&quot;:3.23,&quot;orientation&quot;:&quot;\u897f \u5357&quot;,&quot;window&quot;:&quot;\u666e\u901a\u7a97&quot;,&quot;sort&quot;:5.2},{&quot;roomName&quot;:&quot;\u8fc7\u9053&quot;,&quot;name&quot;:&quot;\u8fc7\u9053&quot;,&quot;area&quot;:2.44,&quot;orientation&quot;:&quot;\u6682\u65e0\u6570\u636e&quot;,&quot;window&quot;:&quot;\u65e0\u7a97&quot;,&quot;sort&quot;:12}]"
+                style="transition: none 0s ease 0s;">
+                <div class="item_list">
+                    <div class="house_model_tit">户型分间
+                        <!-- <span class="icon_wenhao_blue" data-act="pop_frame_tip"></span> -->
+                    </div>
+                    <p class="gray light_small oneline">客厅: 20.06㎡/ 南/ 普通窗</p>
+                    <p class="gray light_small oneline">卧室A: 11.16㎡/ 暂无数据/ 未知窗户类型</p>
+                    <p class="gray light_small oneline">卧室B: 7.62㎡/ 暂无数据/ 未知窗户类型</p>
+                </div>
+                <div class="mod_media">
+                    <div class="media_main">
+                        <img class="lazyload post_ulog" data-evtid="10348" data-ulog=""
+                            src="https://image1.ljcdn.com/hdic-frame/standard_99210773-58c3-43d4-bc5a-3509f61b1b47.png!m_fill,h_750,l_frame,f_jpg,ls_30"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--户型分间 end-->
+
+        <!--更多房源信息-->
+        <a class="btn btn_gray post_ulog" data-evtid="10349" data-ulog="" data-act="show_more_house_info">更多房源信息</a>
+        <!--更多房源信息 end-->
+
+        <!--地图-->
+        <div class="mod_cont">
+            <a href="https://m.lianjia.com/gz/map/pos/?pos=113.213228,23.117115&amp;house_code=108401621855&amp;from=ershoufang"
+                data-evtid="10350" data-ulog="" class="post_ulog">
+                <img src="./image/详情页-image/地图.png">
+
+                <div class="map_marker">
+                    <div class="marker"></div>
+                    <div class="marker_desc">
+                        <p class="marker_title">荔湾区，滘口</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--地图 end-->
+
+        <!--房源介绍-->
+        <a class="house_introduce post_ulog" data-evtid="10351" data-ulog="type=jieshao"
+            href="https://m.lianjia.com/gz/ershoufang/108401621855/houseintroduce_fangyuantese.html">
+            <h3 class="mod_tit arrow">房源介绍</h3>
+            <div class="mod_cont fiveline house_intro_mod_cont">
+                房屋满五年，户型方正2房，地铁口小区，小区环境好 房源得房率高，绿化好。 泳池，儿童乐园，会所等各种配套 小区环境大环境好，封闭管理小区安全 小区环境好，绿化高，配套齐全，适合老年人小孩居住。
+                小区近地铁适宜上班族 地铁：5号窖口地铁站步行100米 公交：窖口客运站总站，公交有206,309,121,202等多路公交 </div>
+        </a>
+        <!--房源介绍 end-->
+
+        <!--经纪人带看反馈-->
+        <div class="sub_mod_box_house_yezhushuo post_ulog" data-evtid="10351"
+            data-ulog="pid=lianjiamweb&amp;event=mModuleExpo&amp;source_type=二手房详情页 - 房源介绍模块点击&amp;housedel_id=108401621855&amp;agent_ucid=1000001000198281&amp;e_plan={&quot;u&quot;:1000001000198281,&quot;v&quot;:&quot;V1&quot;,&quot;s&quot;:&quot;NATURAL&quot;,&quot;adId&quot;:100000128,&quot;flow&quot;:&quot;natural&quot;,&quot;b&quot;:&quot;SeeRecordAgentBuilder&quot;,&quot;p&quot;:&quot;&quot;,&quot;g&quot;:&quot;&quot;,&quot;sid&quot;:&quot;1000001000198281_108401621855&quot;,&quot;rid&quot;:&quot;5669124499008037344&quot;}">
+            <h3 class="mod_tit_complex">
+                <div class="mod_tit_complex_text">
+                    <span>经纪人带看反馈（34）</span>
+                    <a href="https://m.lianjia.com/gz/ershoufang/108401621855/houseintroduce_daikan.html"
+                        class="mod_tit_complex_more">
+                        <span>查看更多</span>
+                        <img src="./image/详情页-image/向右箭头.png" alt="">
+                    </a>
+                    <!-- <div class="avatar_frame"><img origin-src="https://image1.ljcdn.com/usercenter/images/uc_ehr_avatar/1dc55986-c4bb-4d73-a06e-6dbcfc017a7f.jpg!m_fill,w_200,h_200,f_jpg" src="https://s1.ljcdn.com/hulk-web/static/m/images/common/agent_none.png?_v=20210716191023b5e" class="lazyload">
+                        </div>
+                        <p class="small light_gray">最新带看:2021.07.17</p> -->
+                </div>
+            </h3>
+            <div class="agent-daikan">
+                <a class="agent_portrait"><img class="lazyload"
+                        origin-src="https://image1.ljcdn.com/usercenter/images/uc_ehr_avatar/1dc55986-c4bb-4d73-a06e-6dbcfc017a7f.jpg!m_fill,w_200,h_200,f_jpg"
+                        src="https://image1.ljcdn.com/usercenter/images/uc_ehr_avatar/1dc55986-c4bb-4d73-a06e-6dbcfc017a7f.jpg!m_fill,w_200,h_200,f_jpg">
+                </a>
+                <div class="agent_info">
+                    <div class="agent_name">
+                        <label>周晓源</label>
+                        <span class="agent_deyou"
+                            style="color:#9399a5 !important;background-color:#eff0f2;vertical-align: middle;">家域</span>
+                        <div class="agent-credentials active" data-act="showCard"
+                            data-picurl="[{&quot;title&quot;:&quot;&quot;,&quot;code&quot;:&quot;&quot;,&quot;text&quot;:&quot;&quot;,&quot;pic_url&quot;:null}]"
+                            data-title="">
+                            <div class="agent-credentials-icon"></div>
+                        </div>
+                    </div>
+                    <p class="agent_desc gray small">
+                        <span class="see_times gray"> 带看2次 </span> 2021.07.17 带看过
+                    </p>
+                </div>
+                <div class="ke-agent-sj-fr">
+                    <div class="ke-agent-sj-im ke-agent-sj-im-100001362 ke-agent-sj-im-1000001000810855"
+                        data-bl="agentim" data-ucid="1000001000810855" data-source-port="shangyehua_ershou_lianjia_m"
+                        data-source-extends="app_data={&quot;business_dig_v&quot;:{&quot;u&quot;:1000001000810855,&quot;v&quot;:&quot;V3&quot;,&quot;s&quot;:&quot;NATURAL&quot;,&quot;adId&quot;:100001362,&quot;flow&quot;:&quot;natural&quot;,&quot;b&quot;:&quot;DisplayDiamondEsV5Builder&quot;,&quot;p&quot;:&quot;&quot;,&quot;g&quot;:&quot;&quot;,&quot;sid&quot;:&quot;1000001000810855_2110343238861226&quot;,&quot;rid&quot;:&quot;5668187188180295680&quot;}}">
+                    </div>
+                    <div class="ke-agent-sj-phone ke-agent-sj-phone-100001362 ke-agent-sj-phone-1000001000810855">
+                    </div>
+                </div>
+            </div>
+            <div class="mod_cont twoline">
+                您好，广州家域周晓源很高兴为您服务！
+                本人<br />退伍军人，近期带看此房，熟悉房源及其周边情况，
+                此房户型方正，采光通风很好，小区物业管理，居住舒适，视野开阔，人文素质号，附近生活方便，了解更多细节欢迎点击头像咨询，诚实可信，军人品质，竭诚为您服务！
+            </div>
+        </div>
+        <!--经纪人带看反馈 end-->
+
+        <!--房源动态-->
+        <div class="mod_box house_record">
+            <h3 class="mod_tit">房源动态<span class="title_remark gray"></span></h3>
+            <div class="mod_cont">
+                <div class="data flexbox">
+                    <div class="box_col">
+                        <small class="gray">近7日带看(次)</small><br>
+                        <strong>10</strong>
+                    </div>
+                    <div class="box_col">
+                        <small class="gray">30日带看(次)</small><br>
+                        <strong>40</strong>
+                    </div>
+                    <div class="box_col">
+                        <small class="gray">关注(人)</small><br>
+                        <strong>346</strong>
+                    </div>
+                </div>
+            </div>
+            <!-- 暂时不显示，用APP导流 -->
+            <div class="mod_tit_2 mod_sub_tit mod_app">
+                <div class="app_title">使用APP查看详细带看记录和更多动态信息</div>
+                <div class="app_btn lazyload_ulog" data-evtid="10380" data-ulog="ljweb_mod=download_fangdongtai"
+                    data-mark="download_app" data-info="ljweb_mod=download_fangdongtai"
+                    data-query="title=使用链家APP&amp;desc=查看更多房源动态&amp;button_text=安装链家APP&amp;ljweb_mod=download_fangdongtai&amp;id=dongtai"
+                    data-detail_info="{&quot;awaken_app_info&quot;:{&quot;type&quot;:&quot;universalLink&quot;,&quot;download_url&quot;:&quot;https:\/\/linkm.lianjia.com\/?schema=lianjia%253A%252F%252Fershou%252Fdetail%253FhouseCode%253D108401621855&amp;redirect_url=http%253A%252F%252Fad.data.lianjia.com%252Fcallback%252Fsem%253FutmSource%253Dlianjia_zhilian_m%2526platformType%253D2&amp;ssid=01bfdc73-f378-0510-4cb9-634bce289151&amp;uuid=61ec5341-2335-4d62-861a-e58d6a825111&amp;refer=https%3A%2F%2Fm.lianjia.com%2Fgz%2Fershoufang%2F108401621855%2Fhouseintroduce_fangyuantese.html&amp;current_url=https%253A%252F%252Fm.lianjia.com%252Fgz%252Fershoufang%252F108401621855.html%253Ffb_expo_id%253D469585174163255296&amp;sign=2b0787300648c9ac88cb409677cf0631&quot;,&quot;scheme&quot;:&quot;&quot;}}">
+                    打开链家APP</div>
+            </div>
+        </div>
+        <!--房源动态 end-->
+
+        <!--新世界逸彩庭院-->
+        <div class="newword">
+            <div class="newword_tit">
+                <span>新世界逸彩庭院</span>
+                <p>小区详情</p>
+            </div>
+            <div class="newwrod_price">
+                <div class="price_flex">
+                    <div class="item_list item_resblock">
+                        <div class="house_model_tit">
+                            06月参考均价 <i class="nameExplanation" data-act="show_text"
+                                data-text="参考均价是基于过去2年所有成交和有效挂牌房源数据计算而来"></i>
+                            <span class="red">36936元/平</span>
+                        </div>
+                        <p class="gray light_small">建筑年代:2007年建</p>
+                        <p class="gray light_small">楼栋总数:39栋</p>
+                        <p class="gray light_small">房屋总数:2821户</p>
+
+
+                    </div>
+                    <img src="./image/详情页-image/a3a3db92-354e-4fd0-a77d-ebf3bffe5a24.jpg!m_fill,w_210,h_164,lg_north_west,lx_0,ly_0,l_rorate_logo,f_jpg,ls_50"
+                        alt="">
+                </div>
+            </div>
+
+            <!--小区行情周报-->
+            <div class="newwrod_week">
+                <div class="newword_tit">
+                    <span>小区行情周报</span>
+                    <span class="new_data">
+                        07月09日-07月15日
+                    </span>
+                    <p>周报详情</p>
+                </div>
+                <div class="content-box">
+                    <div class="common-price-box">
+                        <div class="price">
+                            <span class="number">39287</span>
+                            <span class="number-unit">元/平</span>
+                            <span class="percent-title">比上周</span>
+                            <i class="glyphicon glyphicon-triangle-top"></i>
+                            0.7 %
+                        </div>
+                        <div class="price-name">
+                            本周挂牌均价 <i class="nameExplanation" data-act="show_text"
+                                data-text="挂牌均价是计算的统计周内平台在售房源的均价"></i>
+                        </div>
+                    </div>
+                    <div class="qushi qushi-1"></div>
+                </div>
+            </div>
+            <!--小区行情周报 end-->
+        </div>
+        <!--新世界逸彩庭院 end-->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+* .page {
+  width: 375px;
+  height: auto;
+}
+* .page .Edition-Center {
+  width: 375px;
+  height: auto;
+  margin: 0 auto;
+}
+* .page .Edition-Center .nav {
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: white;
+}
+* .page .Edition-Center .nav .left {
+  width: 112px;
+  height: 49px;
+  display: flex;
+}
+* .page .Edition-Center .nav .left a {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
+* .page .Edition-Center .nav .left a .l_icon {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: url("../image/个人中心雪碧图.png") no-repeat 0 0;
+  background-size: 135px 240px;
+  background-position: -5px -31px;
+  margin-top: 10px;
+}
+* .page .Edition-Center .nav .left .city_warp {
+  height: 49px;
+  line-height: 49px;
+  margin-left: 20px;
+}
+* .page .Edition-Center .nav .middle {
+  width: 112px;
+  height: 49px;
+  background: url("../image/链家logo.png") no-repeat 0 0;
+  background-size: 85px 49px;
+  background-position: 20px 0px;
+}
+* .page .Edition-Center .nav .right {
+  width: 112px;
+  height: 49px;
+  line-height: 49px;
+}
+* .page .Edition-Center .nav .right .r_icon {
+  width: 50px;
+  height: 49px;
+  background: url("../image/个人中心雪碧图.png") no-repeat 0 0;
+  background-size: 187px 370px;
+  background-position: 17px 6px;
+  float: right;
+  margin-right: 15px;
+}
+* .page .Edition-Center .banner-info {
+  width: 375px;
+  height: auto;
+}
+* .page .Edition-Center .banner-info .banner {
+  width: 100%;
+  height: 210px;
+}
+* .page .Edition-Center .banner-info .banner .search_box {
+  width: 350px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #E8E8E9;
+  border-radius: 2px;
+  position: absolute;
+  margin: 10px 10px 10px 15px;
+  overflow: hidden;
+}
+* .page .Edition-Center .banner-info .banner .search_box div {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 100;
+}
+* .page .Edition-Center .banner-info .banner .search_box .input {
+  border: 0;
+  vertical-align: top;
+  width: 340px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #E8E8E9;
+  position: absolute;
+  right: -15px;
+}
+* .page .Edition-Center .banner-info .banner .slider-frame {
+  width: 375px;
+  height: auto;
+}
+* .page .Edition-Center .banner-info .banner .slider-frame ul {
+  width: 600%;
+  height: auto;
+}
+* .page .Edition-Center .banner-info .banner .slider-frame ul li {
+  width: 375px;
+  height: 210px;
+  float: left;
+}
+* .page .Edition-Center .banner-info .banner .slider-frame ul li img {
+  width: 100%;
+  height: 100%;
+}
+* .page .Edition-Center .kem {
+  width: 375px;
+  height: 40px;
+  border-bottom: 1px solid beige ;
+}
+* .page .Edition-Center .kem .tab-bar {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+* .page .Edition-Center .kem .tab-bar .tab-item {
+  width: 71px;
+  height: 40px;
+  position: relative;
+}
+* .page .Edition-Center .kem .tab-bar .tab-item span {
+  font-size: 14px;
+  line-height: 40px;
+  margin-left: 15px;
+  text-align: center;
+}
+* .page .Edition-Center .kem .tab-bar .tab-item i {
+  font-size: 4px;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  display: block;
+  color: darkgray;
+}
+* .page .Edition-Center .lj-track-r {
+  width: 327px;
+  height: 40px;
+  margin: 16px 24px 0;
+  padding: 0 12px;
+  background-color: #fef7e9;
+}
+* .page .Edition-Center .lj-track-r .bangdan-banner {
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  color: #d99b2c;
+}
+* .page .Edition-Center .lj-track-r .bangdan-banner .icon {
+  width: 24px;
+  height: 25px;
+  line-height: 25px;
+}
+* .page .Edition-Center .lj-track-r .bangdan-banner::after {
+  content: "";
+  position: absolute;
+  right: -160px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background: url(../image/ershoufang-youjiantou.png) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+* .page .Edition-Center .save-search-download {
+  width: 327px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid beige ;
+}
+* .page .Edition-Center .save-search-download span {
+  line-height: 50px;
+  float: left;
+}
+* .page .Edition-Center .save-search-download .lj-track {
+  width: 74px;
+  height: 26px;
+  border: 1px solid green;
+  margin-top: 13px;
+  padding: 0 7px;
+  float: right;
+}
+* .page .Edition-Center .save-search-download .lj-track div {
+  line-height: 26px;
+  color: green;
+}
+* .page .Edition-Center .mod_cont {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+* .page .Edition-Center .mod_cont .lists {
+  width: 100%;
+  height: auto;
+}
+* .page .Edition-Center .mod_cont .lists .item_list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 30px;
+}
+* .page .Edition-Center .mod_cont .lists .item_list img {
+  max-height: 100%;
+  width: 35%;
+  height: 100px;
+  float: left;
+}
+* .page .Edition-Center .mod_cont .lists .item_list .item_main {
+  width: 60%;
+  height: auto;
+  float: right;
+}
+* .page .Edition-Center .mod_cont .lists .item_list .item_main .tit {
+  margin-top: 0;
+  font-size: 18px;
+}
+* .page .Edition-Center .mod_cont .lists .item_list .item_main img {
+  width: auto;
+  height: 20px;
+}
+* .page .Edition-Center .mod_cont .lists .item_list .item_main .item_other {
+  font-size: 12px;
+  font-weight: lighter;
+  color: #9399a5;
+}
+* .page .Edition-Center .mod_cont .lists .item_list .item_main .item_minor .price_total em {
+  font-size: 18px;
+  color: red;
+}
+* .page .Edition-Center .mod_cont .lists .item_list .item_main .item_minor .price_total .unit {
+  font-size: 18px;
+  color: red;
+}
+* .page .Edition-Center .mod_cont .lists .item_list .item_main .item_minor .unit_price {
+  font-size: 12px;
+  font-weight: lighter;
+  color: #9399a5;
+}
+* .page .Edition-Center .mod_cont .lists .item_list .item_main .tag_box span {
+  margin-left: 5px;
+  line: height 16px;
+}
+* .page .Edition-Center .footer {
+  margin-top: 10px;
+  color: white;
+  width: 100%;
+  height: auto;
+  background-color: #2f3130;
+  border: 1px solid black;
+  display: inline-block;
+}
+* .page .Edition-Center .footer .nav {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #2f3130;
+}
+* .page .Edition-Center .footer .nav .location .cur a {
+  font-size: 12px;
+  color: white;
+  float: left;
+}
+* .page .Edition-Center .footer .nav .location a {
+  font-size: 12px;
+  color: white;
+  float: left;
+}
+* .page .Edition-Center .footer .nav .location .location_sp {
+  font-size: 12px;
+  color: white;
+  float: left;
+}
+* .page .Edition-Center .footer .link_box {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  margin: 0 auto;
+}
+* .page .Edition-Center .footer .link_box .link_tit {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+* .page .Edition-Center .footer .link_box .link_tit .li {
+  float: left;
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #3c3f3d;
+  font-size: 16px;
+  text-align: center;
+}
+* .page .Edition-Center .footer .link_box .link_cont {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+* .page .Edition-Center .footer .link_box .link_cont ul {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+* .page .Edition-Center .footer .link_box .link_cont ul li {
+  width: 30%;
+  height: 30%;
+  list-style: disc;
+}
+* .page .Edition-Center .footer .link_box .link_cont ul li a {
+  color: white;
+}
+* .page .Edition-Center .footer .info {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+* .page .Edition-Center .footer .info .icon_box {
+  width: 40%;
+  height: auto;
+  float: left;
+  font-size: 10px;
+}
+* .page .Edition-Center .footer .info .icon_box a {
+  color: white;
+}
+* .page .Edition-Center .footer .info .copyright {
+  width: 50%;
+  height: auto;
+  font-size: 10px;
+}
