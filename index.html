@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
+
 </head>
 
 <body>
@@ -20,10 +21,12 @@
                 <!--导航栏-->
                 <div class="nav">
                     <!--左侧-->
-                    <div class="left fl">Personal<span style="font-size: 12px ;margin-left: 5px ;">view</span></div>
+                    <div class="left fl">Personal
+                        <span style="font-size: 12px ;margin-left: 5px ;">view</span>
+                    </div>
                     <!--右侧-->
                     <div class="right fr">
-                        <ul>
+                        <ul class="right-ul">
                             <li>个人信息</li>
                             <li>兴趣爱好</li>
                             <li>个人经历</li>
@@ -31,31 +34,68 @@
 
                         </ul>
                     </div>
-                    <!--左侧介绍-->
-                    <div class="introduce">
-                        <div class="head fl">
-                            <div class="headpic">
+                </div>
+                <!--导航栏-->
+                <!--中间内容-->
+                <div class="content">
+                    <ul class="mask">
+                        <!--个人信息-->
+                        <div class="introduce ">
+                            <div class="head fl">
+                                <div class="headpic">
 
+                                </div>
+                                <div class="name " style="text-align: center; font-size: 36px;">吴京</div>
                             </div>
-                            <div class="name " style="text-align: center; font-size: 36px;">吴京</div>
+
+
+                            <div class="text fr">
+                                <ul>
+                                    <li>姓名:吴京</li>
+                                    <li>性别:男</li>
+                                    <li>年龄:18</li>
+                                    <li>专业:导演</li>
+                                    <li>爱好:打架 拍电影 </li>
+                                    <li>职业:导演 演员</li>
+                                    <li>代表作:《战狼2》</li>
+                                </ul>
+                            </div>
                         </div>
+                        <!--个人信息 end-->
 
+                        <!--兴趣爱好-->
+                        <div class="hobby"></div>
+                        <!--兴趣爱好 end-->
 
-                        <div class="text fr">
+                        <!--个人经历-->
+                        <div class="preson-experience"></div>
+                        <!--个人经历 end-->
+
+                        <!--项目经历-->
+                        <div class="Project-experience">
                             <ul>
-                                <li>姓名:吴京</li>
-                                <li>性别:男</li>
-                                <li>年龄:18</li>
-                                <li>专业:导演</li>
-                                <li>爱好:打架 拍电影 </li>
-                                <li>职业:导演 演员</li>
-                                <li>代表作:《战狼2》</li>
+                                <li></li>
                             </ul>
                         </div>
-                    </div>
-                   
-                   
+                        <!--项目经历 end-->
+                    </ul>
+
+
+                    <!--左箭头-->
+
+                    <div class="glyphicon glyphicon-chevron-left left-ro"></div>
+
+
+                    <!--右箭头-->
+
+                    <div class="glyphicon glyphicon-chevron-right right-ro" ></div>
+
+
                 </div>
+                <!--中间内容 end-->
+
+
+
             </div>
             <!--版心 end-->
 
@@ -68,6 +108,8 @@
 
 
     </div>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

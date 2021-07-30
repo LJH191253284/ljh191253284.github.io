@@ -21,17 +21,19 @@
         margin: 0 auto;
        
         .typeArea{
-            background-color: rgba(245,245, 245,0.8);
-            border: 1px solid black;
+           
             margin: 0 auto;
             width: 900px;
             height: 500px;
             position: relative;
+            //
+           
             .nav{
             background-color: black;
             width: 100%;
             height: 50px;
-            box-sizing: border-box;
+
+            
             .left{
                 width: 30%;
                 height: 50px;
@@ -57,24 +59,46 @@
                     }
                 }
             }//right end
-            .introduce{
-                width: 90%;
-                height: 400px;
-                margin:50px auto;
-                
-                .headpic{
+        }
+            .content{
+                width: 100%;
+                height: 100%;
+               
+                position: relative;
+                //
+                overflow: hidden;
+               
+                .mask{
                    
+                    width: 400%;
+                    height: 100%;
+                    display: flex;
+                    transition: all 1s;
+                //个人信息
+                .introduce{
+               
+                width: 25%;
+                height: 100%;
+               
+                
+                //左侧头像
+                .headpic{
                     border-radius: 100%;
                     width: 250px;
                     height: 300px;
-                    margin: 20px -10px;
+                    margin: 20px 30px;
                     background: url(../image/wujin.jpg)no-repeat ;
                     background-size: 100% 100%;
-                   
-                }
+                    transition: all 1s;
+                    &:hover{
+                        transform: rotateY(360deg);
+                    }
+                }//左侧头像 end
+
+                //右侧文字
                 .text{
                     
-                    width: 65%;
+                    width: 60%;
                     height: 100%;
                     margin: 20px 0px ;
                     ul{
@@ -88,15 +112,81 @@
                             height: 20%;
                         }
                     }
+                }//右侧文字 end
+                }//个人信息 end
+
+                //兴趣爱好
+                .hobby{
+                    background-color: red;
+                    width: 25%;
+                    height: 100%;
                 }
-            }
+                //兴趣爱好 end
+
+
+                //个人经历
+                .preson-experience{
+                    background-color: blue;
+                    width: 25%;
+                    height: 100%;
+                }
+                //个人经历 end
+
+                //项目经历
+                .Project-experience{
+                    background-color: black;
+                    width: 25%;
+                    height: 100%;
+                }
+                //项目经历 end
+            }// mask end
+               
+                //左箭头
+                .glyphicon-chevron-left{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0px;
+                    top: 200px;
+                    z-index: 10;
+                    font-size: 25px;  
+                    padding:12.5px 12.5px ;
+                    box-sizing: border-box;
+                    transition: all 0.5s;
+                    &:hover{
+                        background: rgba(230,230, 230,0.6);
+                    }
+                }
+                //右箭头
+                .glyphicon-chevron-right{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: 0px;
+                    top: 200px;
+                    z-index: 10;
+                    font-size: 25px;  
+                    padding:12.5px 12.5px ;
+                    box-sizing: border-box;
+                    transition: all 0.5s;
+                    &:hover{
+                        background: rgba(230,230, 230,0.6);
+                    }
+                 }
+         
+           
+            
+            }//content end
+            
 
 
 
             
 
-        }   
-        }
+          
+        }//版心 end
         
     }
 }

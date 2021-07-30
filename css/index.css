@@ -21,8 +21,6 @@
   margin: 0 auto;
 }
 .main .BG .typeArea {
-  background-color: rgba(245, 245, 245, 0.8);
-  border: 1px solid black;
   margin: 0 auto;
   width: 900px;
   height: 500px;
@@ -32,7 +30,6 @@
   background-color: black;
   width: 100%;
   height: 50px;
-  box-sizing: border-box;
 }
 .main .BG .typeArea .nav .left {
   width: 30%;
@@ -59,32 +56,94 @@
 .main .BG .typeArea .nav .right ul li:hover {
   border-bottom: 1px solid white;
 }
-.main .BG .typeArea .nav .introduce {
-  width: 90%;
-  height: 400px;
-  margin: 50px auto;
+.main .BG .typeArea .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
-.main .BG .typeArea .nav .introduce .headpic {
+.main .BG .typeArea .content .mask {
+  width: 400%;
+  height: 100%;
+  display: flex;
+  transition: all 1s;
+}
+.main .BG .typeArea .content .mask .introduce {
+  width: 25%;
+  height: 100%;
+}
+.main .BG .typeArea .content .mask .introduce .headpic {
   border-radius: 100%;
   width: 250px;
   height: 300px;
-  margin: 20px -10px;
+  margin: 20px 30px;
   background: url(../image/wujin.jpg) no-repeat;
   background-size: 100% 100%;
+  transition: all 1s;
 }
-.main .BG .typeArea .nav .introduce .text {
-  width: 65%;
+.main .BG .typeArea .content .mask .introduce .headpic:hover {
+  transform: rotateY(360deg);
+}
+.main .BG .typeArea .content .mask .introduce .text {
+  width: 60%;
   height: 100%;
   margin: 20px 0px ;
 }
-.main .BG .typeArea .nav .introduce .text ul {
+.main .BG .typeArea .content .mask .introduce .text ul {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.main .BG .typeArea .nav .introduce .text ul li {
+.main .BG .typeArea .content .mask .introduce .text ul li {
   width: 50%;
   height: 20%;
+}
+.main .BG .typeArea .content .mask .hobby {
+  background-color: red;
+  width: 25%;
+  height: 100%;
+}
+.main .BG .typeArea .content .mask .preson-experience {
+  background-color: blue;
+  width: 25%;
+  height: 100%;
+}
+.main .BG .typeArea .content .mask .Project-experience {
+  background-color: black;
+  width: 25%;
+  height: 100%;
+}
+.main .BG .typeArea .content .glyphicon-chevron-left {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: 200px;
+  z-index: 10;
+  font-size: 25px;
+  padding: 12.5px 12.5px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.main .BG .typeArea .content .glyphicon-chevron-left:hover {
+  background: rgba(230, 230, 230, 0.6);
+}
+.main .BG .typeArea .content .glyphicon-chevron-right {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  top: 200px;
+  z-index: 10;
+  font-size: 25px;
+  padding: 12.5px 12.5px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.main .BG .typeArea .content .glyphicon-chevron-right:hover {
+  background: rgba(230, 230, 230, 0.6);
 }
