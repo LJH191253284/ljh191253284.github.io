@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #222;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .content {
+            width: 75px;
+            height: 125px;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .content:nth-child(2n) {
+            margin-right: 50px;
+        }
+
+        .content:nth-child(2n + 1) {
+            margin-right: 25px;
+        }
+
+        .content li {
+            width: 25px;
+            height: 25px;
+            /* background-color: black; */
+            padding: 2px;
+            box-sizing: border-box;
+            background-clip: content-box;
+
+            transition: all 0.3s;
+            /* transition: all 3s; */
+            transform: scale(0.5);
+            /* border-radius: 50%; */
+        }
+
+        .content li.active {
+            background-color: white;
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <script src="main.js"></script>
+    <script>
+        function Num(x) {
+            this.num = x
+            console.log(this.num)
+        }
+
+        Num.prototype.cal = function () {
+            return matrix[this.num]
+        }
+        Num.prototype.create = function () {
+            this.cool = this.cal()
+            var content = document.createElement("ul")
+
+            content.classList.add("content")
+
+            var nodes = []
+            this.cool.forEach(function (row, rowIndex) {
+                var rowNodes = []
+                row.forEach(function (col, colIndex) {
+                    var dot = document.createElement("li")
+                    rowNodes.push(dot)
+                    content.appendChild(dot)
+                });
+                nodes.push(rowNodes);
+            });
+            this.nodes = nodes;
+
+            document.querySelector(".box").appendChild(content);
+
+            return this;
+        }
+
+
+
+        Num.prototype.update = function (n) {
+            if (n !== undefined) {
+                this.num = n;
+            }
+            this.coor = this.cal();
+
+            var _this = this;
+
+            this.coor.forEach(function (row, rowIndex) {
+                row.forEach(function (col, colIndex) {
+                    if (col) {
+                        _this.nodes[rowIndex][colIndex].classList.add("active");
+
+                    } else {
+                        _this.nodes[rowIndex][colIndex].classList.remove("active")
+                    }
+                });
+            });
+            return this;
+        };
+
+        function padStart(n) {
+            return (n = n < 10 ? "0" + n : String(n));
+        }
+
+        function timeToArray() {
+            var d = new Date();
+            var hh = d.getHours();
+            var mm = d.getMinutes();
+            var ss = d.getSeconds();
+            hh = padStart(hh);
+            mm = padStart(mm);
+            ss = padStart(ss);
+            return (hh + mm + ss).split("");
+
+        }
+        var time = timeToArray();
+        var nums = [];
+        time.forEach(function (n) {
+            // console.log(element);
+            nums.push(new Num(n).create().update());
+        });
+
+
+        setInterval(() => {
+            var newTime = timeToArray();
+
+            newTime.forEach(function (n, i) {
+                if (n !== time[i]) {
+                    nums[i].update(n);
+                }
+            });
+            time = newTime;
+        }, 500);
+    </script>
+</body>
+
+</html>
