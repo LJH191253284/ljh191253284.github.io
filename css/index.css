@@ -75,9 +75,9 @@
 }
 .main .BG .typeArea .content .mask .introduce .headpic {
   border-radius: 100%;
-  width: 250px;
-  height: 300px;
-  margin: 20px 30px;
+  width: 150px;
+  height: 150px;
+  margin-left: 80px;
   background: url(../image/wujin.jpg) no-repeat;
   background-size: 100% 100%;
   transition: all 1s;
@@ -92,7 +92,7 @@
 }
 .main .BG .typeArea .content .mask .introduce .text ul {
   width: 100%;
-  height: 100%;
+  height: 50%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -100,6 +100,7 @@
 .main .BG .typeArea .content .mask .introduce .text ul li {
   width: 50%;
   height: 20%;
+  font-size: 12px;
 }
 .main .BG .typeArea .content .mask .hobby {
   background-color: red;
@@ -124,8 +125,20 @@
 .main .BG .typeArea .content .mask .Project-experience .lists #first {
   width: 100px;
   height: 100px;
-  border: 1px solid red;
+  background-color: rgba(230, 230, 230, 0.6);
+  text-decoration: none;
   line-height: 100px;
+  transition: all 1s;
+  color: black;
+}
+.main .BG .typeArea .content .mask .Project-experience .lists #first li {
+  font-size: 16px;
+  margin-left: 18px;
+}
+.main .BG .typeArea .content .mask .Project-experience .lists #first:hover {
+  transform: scale(0.8);
+  border-radius: 10px;
+  border: 1px solid red;
 }
 .main .BG .typeArea .content .glyphicon-chevron-left {
   width: 50px;

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            vertical-align: bottom;
+        }
+        li{
+            list-style:none;
+        }
+        .banner{
+            width: 1125px;
+            height: 352px;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner .banner_imgs{
+            width: 1125px;
+            height: 352px;
+        }
+        .banner .banner_imgs ul{
+            width: 700%;
+            position: absolute;
+        }
+        .banner .banner_imgs ul li{
+            width: 1125px;
+            height: 352px;
+            float: left;
+        }
+        .banner .arrow_left,.banner .arrow_right{
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            width: 30px;
+            height: 50px;
+            text-align: center;
+            background: orange;
+            color:white;
+            line-height: 50px;
+            font-size:30px;
+            font-family: "宋体";
+            cursor: pointer;
+        }
+        .banner .arrow_left{
+            left: 0;
+        }
+        .banner .arrow_right{
+            right: 0;
+        }
+        .banner .dot {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -45px;
+        }
+        .banner .dot ol{
+            overflow: hidden;
+        }
+        .banner .dot ol li{
+            width: 10px;
+            height: 10px;
+            background: #000;
+            border-radius: 50%;
+            float: left;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+        .banner .dot ol li.active{
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <!-- 轮播图图片层 -->
+        <div class="banner_imgs">
+            <ul>
+                <li><a href="#"><img src="images/05.jpg"/></a></li>
+                <li><a href="#"><img src="images/01.jpg"/></a></li>
+                <li><a href="#"><img src="images/02.jpg"/></a></li>
+                <li><a href="#"><img src="images/03.jpg"/></a></li>
+                <li><a href="#"><img src="images/04.jpg"/></a></li>
+                <li><a href="#"><img src="images/05.jpg"/></a></li>
+                <li><a href="#"><img src="images/01.jpg"/></a></li>
+            </ul>
+        </div>
+
+        <!-- 左右箭头 -->
+        <span class="arrow_left">&lt;</span>
+        <span class="arrow_right">&gt;</span>
+
+        <!-- 指示器(分页器) -->
+        <div class="dot">
+            <ol>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="js/animate.js"></script>
+    <script>
+        // 定义一个全局变量num,表示显示第几个图片
+        var num = 1;
+        // 获取.banner对象
+        var banner = document.querySelector(".banner");
+        // 获取.banner的宽度
+        var bannerWidth = parseInt( getStyle( banner, "width" ) );
+        // 获取.banner_imgs里面的ul对象
+        var bannerImgsUl = document.querySelector(".banner .banner_imgs ul");
+        // 设置一打开页面,默认看到的的图片1
+        bannerImgsUl.style.left = -bannerWidth*num + "px";
+
+        // 功能2: 点击右侧按钮,小圆圈跟随变化
+        // 定义一个全局变量 circleIndex保存当前高亮的小圆点
+        var circleIndex = 0;
+        // 获取所有小圆点
+        var dotLis = document.querySelectorAll(".dot ol li");
+
+        // 定义一个变量flag节流阀(开关灯)
+        var flag = true;
+
+        // 功能1: 点击右侧按钮一次，就让图片滚动一张
+        var arrow_right = document.querySelector(".arrow_right");
+        arrow_right.onclick = function(){
+            if( flag ){// 判断节流阀的状态
+                flag = false;// 关闭节流阀
+                // 自加1
+                num++;
+                // 自加1
+                circleIndex++;
+
+                // 排他
+                for(var i = 0; i < dotLis.length; i++ ){
+                    dotLis[i].classList.remove("active");
+                }
+                // 小圆点边界判断
+                if( circleIndex == 5 ){
+                    circleIndex = 0;
+                }
+                // 高亮指定项
+                dotLis[circleIndex].classList.add("active");
+
+                // 动画改变left属性值
+                animate( bannerImgsUl , {
+                    "left" : -bannerWidth*num
+                } , function(){
+                    if( num == 6 ){// num边界判断,判断num是否为6
+                        num = 1;
+                        bannerImgsUl.style.left = -bannerWidth*num + "px";
+                    }
+
+                    // 重新打开节流阀
+                    flag = true;
+                })
+
+            }
+        }
+
+        // 功能3: 实现左侧按钮功能
+        // 给左侧按钮绑定点击事件
+        var arrow_left = document.querySelector(".arrow_left");
+        arrow_left.onclick = function(){
+            if( flag ){// 判断节流阀状态
+                flag = false;// 关闭节流阀
+
+                // 自减1
+                num--;
+                // 自减1
+                circleIndex--;
+
+                // 排他
+                for(var i = 0; i < dotLis.length; i++ ){
+                    dotLis[i].classList.remove("active");
+                }
+                // 小圆点边界判断
+                if( circleIndex == -1 ){
+                    circleIndex = dotLis.length-1;
+                }
+                // 高亮指定项
+                dotLis[circleIndex].classList.add("active");
+
+                // 动画改变left属性值
+                animate( bannerImgsUl , {
+                    "left" : -bannerWidth*num
+                } , function(){
+                    if( num == 0 ){// num边界判断,判断num是否为0
+                        num = 5;
+                        bannerImgsUl.style.left = -bannerWidth*num + "px";
+                    }
+
+                    // 开启节流阀
+                    flag = true;
+                })
+            }
+        }
+
+        
+        // 功能4: 被点击小圆圈高亮,并且滚动到对应图片
+        for( var j = 0; j < dotLis.length; j++ ){
+            // 定义自定义属性
+            dotLis[j].setAttribute("data-index", j+1 );
+
+            dotLis[j].onclick = function(){
+                // 排他思想,清除所有的ol中li的active类
+                for(var i = 0; i < dotLis.length; i++ ){
+                    dotLis[i].classList.remove("active");
+                }
+
+                // 高亮当前项
+                this.classList.add("active");
+
+                // 获取当前被点击ol中的li对应的data-index属性值
+                var currentLiIndex = this.getAttribute("data-index");
+
+                // 功能5: 点击某个小圆圈,再点击左侧按钮或右侧按钮,解决图片跟小圆点对应不上问题
+                circleIndex = currentLiIndex-1;
+
+                // 修改num的值
+                num = currentLiIndex;
+                // 动画改变left属性值
+                animate( bannerImgsUl , {
+                    "left" : -bannerWidth*num
+                })
+
+            }
+        }
+
+
+        // 功能6: 自动播放功能
+        var timer = null;
+        timer = setInterval( function(){
+            // 因为自动播放功能实现的代码跟右侧按钮点击一样
+            // 手动触发事件
+            arrow_right.click();
+        }, 2000 );
+
+        banner.onmouseover = function(){
+            window.clearInterval( timer );
+            timer = null;
+        }
+
+        banner.onmouseout = function(){
+            if( timer == null ){
+                timer = setInterval( function(){
+                    // 因为自动播放功能实现的代码跟右侧按钮点击一样
+                    // 手动触发事件
+                    arrow_right.click();
+                }, 2000 );
+            }
+        }
+        
+        // 功能7: 防止轮播图左右按钮连续点击造成播放过快,添加节流阀功能
+    </script>
+</body>
+</html>

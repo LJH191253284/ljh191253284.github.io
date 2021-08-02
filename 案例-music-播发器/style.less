@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+@keyframes playing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.stage {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("./1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(50px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1.1);
+  }
+
+  .player {
+    transition: all 0.8s;
+    .track {
+      //   background: red;
+      transform: translateY(90px);
+      background-color: #e2dfdf;
+      border-radius: 15px 15px 0 0;
+      margin: 0 15px;
+      display: flex;
+      justify-content: flex-end;
+      height: 90px;
+
+      transition: inherit;
+      .right {
+        width: 60%;
+        height: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        // background-color: lightblue;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h3 {
+        }
+        h5 {
+        }
+        .progress {
+          background-color: lightblue;
+          position: relative;
+          input {
+            width: 100%;
+            outline: none;
+            border: none;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            opacity: 0;
+            z-index: 9;
+          }
+          .x {
+            width: 30%;
+            height: 4px;
+            display: block;
+            background-color: red;
+          }
+          .dot {
+            width: 10px;
+            height: 10px;
+            background-color: blue;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 30%;
+            margin-left: -5px;
+          }
+        }
+      }
+    }
+
+    .control {
+      position: relative;
+      top: 0;
+      left: 0;
+      transition: inherit;
+      .thumb {
+        // background-color: lightblue;
+        position: absolute;
+        bottom: 15px;
+        left: 30px;
+
+        transition: inherit;
+        &::before {
+          content: "";
+          display: block;
+          width: 10px;
+          height: 10px;
+          border: 3px solid rgb(240, 9, 9);
+          background-color: #d6d6de;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+
+          z-index: 9;
+        }
+        img {
+          width: 115px;
+          height: 115px;
+          border-radius: 50%;
+
+          //   border: 10px solid white;
+          box-shadow: 0 0 0 10px white;
+          vertical-align: middle;
+
+          transition: all 0.3s linear 0.8s;
+
+          animation: playing 8s linear infinite;
+          animation-play-state: paused;
+        }
+      }
+      ul.bar {
+        margin: 0;
+        padding: 0%;
+        list-style: none;
+        border-radius: 15px;
+
+        width: 400px;
+        padding: 15px;
+        background-color: white;
+
+        display: flex;
+        justify-content: flex-end;
+        li {
+          width: 70px;
+          height: 70px;
+          background-color: white;
+          margin-left: 10px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 24px;
+
+          color: #d6d6de;
+          border-radius: 15px;
+
+          transition: all 0.8s;
+
+          &:hover {
+            background-color: #d6d6de;
+            color: white;
+          }
+
+          .fa-play {
+            display: block;
+          }
+          .fa-pause {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.playing {
+      .track {
+        transform: translateY(0px);
+      }
+      .control {
+        .thumb {
+          bottom: 30px;
+          img {
+            box-shadow: 0 0 0 5px white;
+
+            animation-play-state: running;
+          }
+        }
+        ul.bar {
+          li {
+            .fa-play {
+              display: none;
+            }
+            .fa-pause {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

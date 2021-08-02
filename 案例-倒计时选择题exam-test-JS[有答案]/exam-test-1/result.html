@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示分数页面</title>
+    <style>
+        html  , body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            width:100%;
+            background-image: url(./images/bg.png);
+            background-size: 100% 100%;
+        }
+        .layout {
+            border: 1px solid transparent;
+            overflow: hidden;
+        }
+        .layout , .container {
+            width: 970px;
+            height: 100%;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .test-message {
+            width: 500px;
+            margin: 150px auto 0 ;
+            height: 300px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="container">
+            <div class="test-message">
+                <h3>判断题： <span>0</span> 分</h3>
+                <h3>选择题： <span>0</span> 分</h3>
+                <h3>填空题： <span>0</span> 分</h3>
+                <h3>总&nbsp;&nbsp;&nbsp;&nbsp;分： <span>0</span>分</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var spans = document.getElementsByTagName("span");
+        var str = location.search;
+        if(str.indexOf("&") > -1){
+            var arr = str.split("&");
+            for(var i = 0 ; i < arr.length ; i ++){
+                spans[i].innerText = arr[i].split("=")[1]
+            }
+        }
+    </script>
+</body>
+</html>

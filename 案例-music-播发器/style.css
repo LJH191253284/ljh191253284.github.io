@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+@keyframes playing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.stage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.stage::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(50px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1.1);
+}
+.stage .player {
+  transition: all 0.8s;
+}
+.stage .player .track {
+  transform: translateY(90px);
+  background-color: #e2dfdf;
+  border-radius: 15px 15px 0 0;
+  margin: 0 15px;
+  display: flex;
+  justify-content: flex-end;
+  height: 90px;
+  transition: inherit;
+}
+.stage .player .track .right {
+  width: 60%;
+  height: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.stage .player .track .right .progress {
+  background-color: lightblue;
+  position: relative;
+}
+.stage .player .track .right .progress input {
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  z-index: 9;
+}
+.stage .player .track .right .progress .x {
+  width: 30%;
+  height: 4px;
+  display: block;
+  background-color: red;
+}
+.stage .player .track .right .progress .dot {
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  margin-left: -5px;
+}
+.stage .player .control {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: inherit;
+}
+.stage .player .control .thumb {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+  transition: inherit;
+}
+.stage .player .control .thumb::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #f00909;
+  background-color: #d6d6de;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9;
+}
+.stage .player .control .thumb img {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px white;
+  vertical-align: middle;
+  transition: all 0.3s linear 0.8s;
+  animation: playing 8s linear infinite;
+  animation-play-state: paused;
+}
+.stage .player .control ul.bar {
+  margin: 0;
+  padding: 0%;
+  list-style: none;
+  border-radius: 15px;
+  width: 400px;
+  padding: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+.stage .player .control ul.bar li {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #d6d6de;
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+.stage .player .control ul.bar li:hover {
+  background-color: #d6d6de;
+  color: white;
+}
+.stage .player .control ul.bar li .fa-play {
+  display: block;
+}
+.stage .player .control ul.bar li .fa-pause {
+  display: none;
+}
+.stage .player.playing .track {
+  transform: translateY(0px);
+}
+.stage .player.playing .control .thumb {
+  bottom: 30px;
+}
+.stage .player.playing .control .thumb img {
+  box-shadow: 0 0 0 5px white;
+  animation-play-state: running;
+}
+.stage .player.playing .control ul.bar li .fa-play {
+  display: none;
+}
+.stage .player.playing .control ul.bar li .fa-pause {
+  display: block;
+}
+/*# sourceMappingURL=./style.css.map */

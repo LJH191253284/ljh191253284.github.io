@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    color: #ff7517;
+}
+
+body {
+    font-size: 14px;
+}
+
+.banner {
+    width: 1226px;
+    height: 460px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.banner .banner_imgs {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .banner_imgs ul li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* 设置透明度为0,表示完全透明 */
+    opacity: 0;
+    /* 设置过渡属性 */
+    transition: opacity 0.8s;
+}
+
+.banner .banner_imgs ul li.active {
+    /* 设置透明度为1,表示完全不透明 */
+    opacity: 1;
+    z-index: 10;
+}
+
+.banner .banner_imgs ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .arrow_left {
+    width: 41px;
+    height: 69px;
+    background: url(../images/icon-slides.png) -84px 0;
+    position: absolute;
+    left: 234px;
+    top: 50%;
+    margin-top: -35px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.banner .arrow_left:hover {
+    background-position: left top;
+}
+
+.banner .arrow_right {
+    width: 41px;
+    height: 69px;
+    background: url(../images/icon-slides.png) right 0;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -35px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.banner .arrow_right:hover {
+    background-position: -42px 0;
+}
+
+.banner .dot {
+    position: absolute;
+    bottom: 26px;
+    right: 34px;
+    z-index: 20;
+}
+
+.banner .dot ol li {
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fff;
+    border-color: hsla(0, 0%, 100%, .3);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .4);
+    float: left;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.banner .dot ol li:last-child {
+    margin-right: 0;
+}
+
+.banner .dot ol li.active {
+    background: hsla(0, 0%, 100%, .4);
+    border-color: rgba(0, 0, 0, .4);
+}
+
+
+
+.banner .nav {
+    width: 234px;
+    height: 440px;
+    padding-top: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 30;
+}
+
+.banner .nav ul li {
+    height: 42px;
+    line-height: 42px;
+}
+
+.banner .nav ul li:hover {
+    background: #ff6700;
+}
+
+.banner .nav ul li a {
+    color: white;
+    display: block;
+    padding-left: 30px;
+    padding-right: 23px;
+}
+
+.banner .nav ul li a span {
+    float: right;
+    font-family: "宋体";
+    font-size: 24px;
+}
+
+.nav_detail {
+    height: 460px;
+    background: white;
+    position: absolute;
+    left: 234px;
+    top: 0;
+    z-index: 30;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+    display: none;
+}
+
+.nav_detail .item {
+    height: 460px;
+    display: none;
+}
+
+.nav_detail .item ul {
+    width: 248px;
+    float: left;
+}
+
+.nav_detail .item ul li {
+    height: 76px;
+    line-height: 76px;
+}
+
+.nav_detail .item ul li img {
+    width: 32px;
+    vertical-align: middle;
+    margin-right: 17px;
+    margin-left: 25px;
+}
