@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .mbox {
+            position: relative;
+            width: 300px;
+            height: 300px;
+           
+            border: 1px solid black;
+        
+        }
+        .mbox>img{
+            width: 300px;
+            height: 300px;
+        }
+ 
+        .mask {
+            display: none;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            opacity: .4;
+            cursor: move;
+        }
+ 
+        .xbox {
+            display: none;
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            top: 0;
+            left: 350px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .bbox{
+            width: 300px;
+            height: 60px;
+            border: 1px solid #999;
+            border-top: transparent;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            top:300px;
+          
+        }
+        .bbox>img{
+            width: 50px;
+            height: 50px;
+        }
+        .bor{
+            border: 1px solid red;
+        }
+ 
+        .ximg {
+            position: absolute;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="mbox">
+         <img src="images/1_middle.jpg" alt="" style="width: 300px;height: 300px;">
+        <div class="xbox">
+            <img src="images/1_big.jpg" class="ximg">
+        </div>
+        <div class="mask"></div>
+        
+        </div>
+    <div class="bbox">
+            <img src="images/1_small.jpg" alt="">
+            <img src="images/2_small.jpg" alt="">
+            <img src="images/3_small.jpg" alt="">
+            <img src="images/4_small.jpg" alt="">
+            <img src="images/5_small.jpg" alt="">
+            <img src="images/6_small.jpg" alt="">
+        </div>
+    <script>
+        //mbox指小盒子，xbox指放大后所显示的大盒子，ximg指大盒子中的图片，mask指橙色的遮罩层
+        var mbox = document.querySelector('.mbox');
+        var xbox = document.querySelector('.xbox');
+        var ximg = document.querySelector('.ximg');
+        var mask = document.querySelector('.mask');
+        //给bbox底部图片添加事件
+        var imgList=document.querySelector(".bbox").querySelectorAll("img")
+        var mboximg=document.querySelector(".mbox").querySelector("img")
+        for(let i=0;i<imgList.length;i++)
+        imgList[i].onclick=function(){
+            for(var j=0;j<imgList.length;j++){
+                imgList[j].classList.remove("bor")//把其他全干掉
+            }
+            mboximg.src=`images/${i+1}_middle.jpg`//middle换图片
+            ximg.src=`images/${i+1}_big.jpg`      //big换图片
+            console.log( mboximg.src)
+            
+           this.classList.add("bor")//给当前对象添加样式
+        }
+        //给mbox添加鼠标经过事件
+        mbox.addEventListener('mouseover', function () {
+            //当鼠标经过mbox时，mask和xbox显示出来
+            mask.style.display = 'block';
+            xbox.style.display = 'block';
+            //给mbox添加鼠标移动事件
+            mbox.addEventListener('mousemove', move);
+ 
+            function move(e) {
+                //计算鼠标在mbox内的坐标。为了让鼠标居于mask中心，再各减去mask的宽高一半
+                var left = e.pageX - mbox.offsetLeft - mask.offsetWidth / 2;
+                var top = e.pageY - mbox.offsetTop - mask.offsetHeight / 2;
+                //计算显示比率，ximg最大移动距离/mask最大移动距离
+                var ratio = (ximg.offsetWidth - xbox.offsetWidth) / (mbox.offsetWidth - mask.offsetWidth);
+                //把left、top限制在mbox的范围中
+                if (left <= 0) {
+                    left = 0;
+                } else if (left >= mbox.offsetWidth - mask.offsetWidth) {
+                    left = mbox.offsetWidth - mask.offsetWidth;
+                }
+                if (top <= 0) {
+                    top = 0;
+                } else if (top >= mbox.offsetHeight - mask.offsetHeight) {
+                    top = mbox.offsetHeight - mask.offsetHeight;
+                }
+                mask.style.left = left + 'px';
+                mask.style.top = top + 'px';
+                //mask的移动方向与ximg的移动方向刚刚好相反，试一下把 '-' 去掉即可明白。
+                //且ximg移动距离为mask的ratio倍。
+                ximg.style.left = '-' + left * ratio + 'px';
+                ximg.style.top = '-' + top * ratio + 'px';
+            }
+        })
+        //给mbox添加鼠标离开事件
+        mbox.addEventListener('mouseout', function () {
+            mask.style.display = 'none';
+            xbox.style.display = 'none';
+        })
+    </script>
+
+
+</body>
+</html>
